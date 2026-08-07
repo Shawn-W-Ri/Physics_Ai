@@ -1,0 +1,20 @@
+title: "Even · Simulation × AI"
+description: "Physics simulation, PDEs, numerical methods, statistics, machine learning and scientific AI."
+url: ""
+baseurl: ""
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+permalink: /notes/:year/:month/:day/:title/
+
+nav:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Notes
+    url: /notes/
+  - title: Labs
+    url: /labs/
+  - title: About
+    url: /about/

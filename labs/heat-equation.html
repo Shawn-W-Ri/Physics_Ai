@@ -1,0 +1,32 @@
+---
+layout: default
+title: Heat Equation Lab
+permalink: /labs/heat-equation.html
+---
+<section class="page-hero"><div class="container narrow"><div class="eyebrow">LAB 01</div><h1>一维热方程 · Finite Difference</h1><p>求解 $u_t = \alpha u_{xx}$。显式格式需要满足 $r=\alpha\Delta t/\Delta x^2 \le 1/2$。</p></div></section>
+<section class="section"><div class="container narrow">
+<div class="lab-panel">
+  <canvas id="heatCanvas" width="900" height="420"></canvas>
+  <div class="controls">
+    <label>扩散系数 α <input id="alpha" type="range" min="0.1" max="1" step="0.05" value="0.4"><span id="alphaVal">0.40</span></label>
+    <button id="toggle" class="btn primary">开始</button>
+    <button id="reset" class="btn secondary">重置</button>
+  </div>
+  <p class="muted">初值：中心高斯温度峰；边界：$u(0,t)=u(1,t)=0$。</p>
+</div>
+</div></section>
+<script>
+(() => {
+  const c = document.getElementById('heatCanvas'), ctx = c.getContext('2d');
+  const alphaEl = document.getElementById('alpha'), alphaVal = document.getElementById('alphaVal');
+  const toggle = document.getElementById('toggle'), reset = document.getElementById('reset');
+  const N = 140, dx = 1/(N-1), dt = 0.35*dx*dx; let u=[], next=[], running=false;
+  function init(){ u = Array.from({length:N}, (_,i)=>{const x=i*dx; return Math.exp(-180*(x-.5)*(x-.5));}); u[0]=u[N-1]=0; draw(); }
+  function step(){ const a=+alphaEl.value, r=a*dt/(dx*dx); next=u.slice(); for(let i=1;i<N-1;i++) next[i]=u[i]+r*(u[i+1]-2*u[i]+u[i-1]); next[0]=next[N-1]=0; u=next; }
+  function draw(){ ctx.clearRect(0,0,c.width,c.height); ctx.strokeStyle='#29324d'; ctx.lineWidth=1; for(let j=0;j<=4;j++){const y=30+j*(c.height-60)/4;ctx.beginPath();ctx.moveTo(50,y);ctx.lineTo(c.width-20,y);ctx.stroke();} ctx.strokeStyle='#72e6c4';ctx.lineWidth=3;ctx.beginPath();u.forEach((v,i)=>{const x=50+i/(N-1)*(c.width-70), y=c.height-30-v*(c.height-80);i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.stroke(); ctx.fillStyle='#9da9c9';ctx.font='14px Inter';ctx.fillText('x = 0',50,c.height-8);ctx.fillText('x = 1',c.width-55,c.height-8); }
+  function loop(){ if(running){ for(let k=0;k<4;k++) step(); draw(); requestAnimationFrame(loop);} }
+  alphaEl.oninput=()=>{alphaVal.textContent=(+alphaEl.value).toFixed(2)};
+  toggle.onclick=()=>{running=!running;toggle.textContent=running?'暂停':'开始'; if(running) loop();};
+  reset.onclick=()=>{running=false;toggle.textContent='开始';init();}; init();
+})();
+</script>

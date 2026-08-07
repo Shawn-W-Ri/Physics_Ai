@@ -1,0 +1,12 @@
+---
+layout: default
+title: Wave Equation Lab
+permalink: /labs/wave-equation.html
+---
+<section class="page-hero"><div class="container narrow"><div class="eyebrow">SIMULATION LAB</div><h1>一维波动方程</h1><p>教学型有限差分演示：$u_{tt}=c^2u_{xx}$，观察波速如何改变传播。</p></div></section>
+<section class="section"><div class="container narrow"><div class="lab-panel">
+<canvas id="waveCanvas" width="900" height="420"></canvas>
+<div class="controls"><label>波速 c <input id="cSpeed" type="range" min="0.2" max="1.2" step="0.05" value="0.7"><span id="cSpeedVal">0.70</span></label><button id="waveToggle" class="btn primary">开始</button><button id="waveReset" class="btn secondary">重置</button></div>
+<p class="muted">初值：中心高斯脉冲；固定端点。此页面用于理解 CFL 条件与传播，不是科研级求解器。</p>
+</div></div></section>
+<script>(()=>{const cv=document.getElementById('waveCanvas'),ctx=cv.getContext('2d'),ce=document.getElementById('cSpeed'),val=document.getElementById('cSpeedVal'),tog=document.getElementById('waveToggle'),rst=document.getElementById('waveReset');const N=180,dx=1/(N-1),dt=.6*dx/1.2;let prev=[],u=[],next=[],run=false;function init(){u=Array.from({length:N},(_,i)=>{let x=i*dx;return Math.exp(-450*(x-.5)**2)});prev=u.slice();u[0]=u[N-1]=prev[0]=prev[N-1]=0;draw()}function step(){let c=+ce.value,r=(c*dt/dx)**2;next=u.slice();for(let i=1;i<N-1;i++)next[i]=2*u[i]-prev[i]+r*(u[i+1]-2*u[i]+u[i-1]);next[0]=next[N-1]=0;prev=u;u=next}function draw(){ctx.clearRect(0,0,cv.width,cv.height);ctx.strokeStyle='#29324d';for(let j=0;j<=4;j++){let y=35+j*(cv.height-70)/4;ctx.beginPath();ctx.moveTo(45,y);ctx.lineTo(cv.width-25,y);ctx.stroke()}ctx.strokeStyle='#72e6c4';ctx.lineWidth=3;ctx.beginPath();u.forEach((v,i)=>{let x=45+i/(N-1)*(cv.width-70),y=cv.height/2-v*(cv.height*.32);i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.stroke()}function loop(){if(run){for(let k=0;k<2;k++)step();draw();requestAnimationFrame(loop)}}ce.oninput=()=>val.textContent=(+ce.value).toFixed(2);tog.onclick=()=>{run=!run;tog.textContent=run?'暂停':'开始';if(run)loop()};rst.onclick=()=>{run=false;tog.textContent='开始';init()};init()})();</script>

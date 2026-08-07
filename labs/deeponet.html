@@ -1,0 +1,8 @@
+---
+layout: default
+title: DeepONet Lab
+permalink: /labs/deeponet.html
+---
+<section class="page-hero"><div class="container narrow"><div class="eyebrow">SCI-ML LAB</div><h1>DeepONet · Operator Learning Intuition</h1><p>把输入函数的若干传感器值编码成 branch 表示，再与查询位置的 trunk 表示组合。</p></div></section>
+<section class="section"><div class="container narrow"><div class="lab-panel"><canvas id="deepCanvas" width="900" height="420"></canvas><div class="controls"><label>输入函数频率 <input id="freq" type="range" min="1" max="5" step="0.1" value="2"><span id="freqV">2.0</span></label></div><p class="muted">这是 operator-learning 架构直觉图：输入不是单个向量样本，而是函数；输出也是一个函数。</p></div></div></section>
+<script>(()=>{const cv=document.getElementById('deepCanvas'),ctx=cv.getContext('2d'),fe=document.getElementById('freq'),fv=document.getElementById('freqV');function draw(){ctx.clearRect(0,0,cv.width,cv.height);let f=+fe.value,X=x=>60+x*(cv.width-120),Y=y=>cv.height/2-y*(cv.height*.26);ctx.strokeStyle='#29324d';ctx.beginPath();ctx.moveTo(60,Y(0));ctx.lineTo(cv.width-60,Y(0));ctx.stroke();ctx.strokeStyle='#ffd36a';ctx.lineWidth=2;ctx.beginPath();for(let i=0;i<=250;i++){let x=i/250,y=Math.sin(2*Math.PI*f*x);i?ctx.lineTo(X(x),Y(y)):ctx.moveTo(X(x),Y(y))}ctx.stroke();const sensors=[.1,.3,.5,.7,.9];ctx.fillStyle='#72e6c4';sensors.forEach(x=>{let y=Math.sin(2*Math.PI*f*x);ctx.beginPath();ctx.arc(X(x),Y(y),6,0,Math.PI*2);ctx.fill()});ctx.fillStyle='#9da9c9';ctx.font='14px Inter';ctx.fillText('绿色点：branch net 读取的传感器值；查询位置 y 由 trunk net 编码',60,35)}fe.oninput=()=>{fv.textContent=(+fe.value).toFixed(1);draw()};draw()})();</script>
