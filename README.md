@@ -146,3 +146,9 @@ bundle exec jekyll serve
 | 改导航 / Footer | `_layouts/default.html` |
 
 详细入门见 `GETTING_STARTED.md`，日常维护见 `MAINTENANCE.md`。
+
+## 2026-08 Redesign
+
+新版采用更接近现代科技公司 / 研究机构主页的视觉语言：大字号 Hero、暗色科学可视化、浅色内容区、大留白、圆角卡片和高对比的实验入口。
+
+如果旧版上线后显示成“裸 HTML”，请直接上传这一版覆盖。新版把主 CSS 从 `_includes/site.css` 内嵌到 Jekyll 页面，可规避 GitHub Pages 项目仓库常见的 CSS 路径错误。详细见 `REDESIGN_DEPLOY.md`。
