@@ -1,7 +1,7 @@
 title: "Even · Simulation × AI"
 description: "Physics simulation, PDEs, numerical methods, statistics, machine learning and scientific AI."
 url: ""
-baseurl: "Physics_Ai"
+baseurl: ""
 markdown: kramdown
 kramdown:
   math_engine: mathjax
