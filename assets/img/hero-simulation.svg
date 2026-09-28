@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#17233b"/><stop offset=".55" stop-color="#0b1019"/><stop offset="1" stop-color="#05070b"/></radialGradient>
+  <radialGradient id="hot"><stop offset="0" stop-color="#e6fbff"/><stop offset=".18" stop-color="#69e5ff"/><stop offset=".48" stop-color="#3977ff"/><stop offset=".74" stop-color="#7b5cff" stop-opacity=".72"/><stop offset="1" stop-color="#7b5cff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="line" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8ee7ff"/><stop offset="1" stop-color="#a58cff"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="900" height="900" fill="url(#bg)"/>
+<g opacity=".16" stroke="#b5c6df" stroke-width="1">
+  <path d="M0 150H900M0 300H900M0 450H900M0 600H900M0 750H900"/>
+  <path d="M150 0V900M300 0V900M450 0V900M600 0V900M750 0V900"/>
+</g>
+<ellipse cx="518" cy="405" rx="282" ry="230" fill="url(#hot)" opacity=".9" filter="url(#glow)"/>
+<g fill="none" stroke="url(#line)" stroke-width="3" opacity=".92">
+  <path d="M165 478C223 291 400 170 588 203c152 27 256 132 240 263-21 169-212 278-392 247-184-32-326-116-271-235Z"/>
+  <path d="M218 471c47-139 177-227 319-203 118 20 201 100 189 201-16 126-164 208-306 184-143-25-245-87-202-182Z"/>
+  <path d="M277 462c34-94 121-153 218-136 80 14 137 69 128 137-11 84-112 138-209 122-97-17-166-58-137-123Z"/>
+  <path d="M344 453c20-53 70-86 125-77 46 8 78 39 73 78-7 47-64 79-120 69-56-9-95-33-78-70Z"/>
+</g>
+<g stroke="#cfeeff" stroke-width="1.4" opacity=".52">
+  <path d="M91 682C222 560 341 522 452 532s235 87 359 67" fill="none"/>
+  <path d="M103 720c153-101 273-122 383-93s201 76 314 55" fill="none"/>
+  <path d="M92 646c149-151 280-186 398-162s199 85 319 62" fill="none"/>
+</g>
+<g fill="#dff8ff">
+  <circle cx="188" cy="272" r="4"/><circle cx="735" cy="211" r="3"/><circle cx="684" cy="682" r="4"/><circle cx="289" cy="722" r="3"/><circle cx="793" cy="531" r="3"/><circle cx="128" cy="554" r="3"/>
+</g>
+<g transform="translate(92 84)"><rect width="245" height="78" rx="22" fill="#0e1420" stroke="#33405a"/><text x="24" y="32" fill="#8ea1bd" font-family="Arial,sans-serif" font-size="16">FIELD SNAPSHOT</text><text x="24" y="58" fill="#f5fbff" font-family="Arial,sans-serif" font-size="23" font-weight="700">u(x,t) · t = 0.42</text></g>
+</svg>

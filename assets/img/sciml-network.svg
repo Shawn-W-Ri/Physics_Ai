@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560">
+<defs><linearGradient id="d" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#080b12"/><stop offset="1" stop-color="#151124"/></linearGradient><linearGradient id="n" x1="0" x2="1"><stop stop-color="#49d9ff"/><stop offset="1" stop-color="#a27dff"/></linearGradient></defs>
+<rect width="900" height="560" fill="url(#d)"/>
+<g stroke="#7685a5" stroke-opacity=".35" stroke-width="2">
+<path d="M143 194 342 133M143 194l199 150M143 330l199-197M143 330l199 211M342 133l214 68M342 133l214 178M342 344l214-143M342 344l214-33M342 344l214 127M342 541l214-230M556 201l201 84M556 311l201-26M556 471l201-186"/>
+</g>
+<g fill="#0f1520" stroke="url(#n)" stroke-width="4">
+<circle cx="143" cy="194" r="28"/><circle cx="143" cy="330" r="28"/><circle cx="342" cy="133" r="25"/><circle cx="342" cy="344" r="25"/><circle cx="342" cy="541" r="25"/><circle cx="556" cy="201" r="25"/><circle cx="556" cy="311" r="25"/><circle cx="556" cy="471" r="25"/><circle cx="757" cy="285" r="34"/>
+</g>
+<text x="54" y="67" fill="#93a5bf" font-family="Arial,sans-serif" font-size="17" letter-spacing="3">SCIENTIFIC ML</text><text x="54" y="108" fill="#fff" font-family="Arial,sans-serif" font-size="34" font-weight="700">Learn operators, not just labels.</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560">
+<defs><linearGradient id="bg2" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f8fbff"/><stop offset="1" stop-color="#dce7f4"/></linearGradient><linearGradient id="g" x1="0" x2="1"><stop stop-color="#2f7cff"/><stop offset="1" stop-color="#7d5cff"/></linearGradient></defs>
+<rect width="900" height="560" fill="url(#bg2)"/>
+<g transform="translate(48 128)" fill="none" stroke="#315271" stroke-opacity=".52" stroke-width="1.8">
+<path d="M20 252 111 51l130 37 116-61 126 86 126-66 139 64 61 169-121 58-137-37-120 57-136-59-124 43Z"/>
+<path d="M111 51 145 180 20 252M111 51l130 37-96 92 112 84-237-12M241 88l116-61 12 139-128-78M357 27l126 86-114 53 118 98-118-98-112 98M483 113l126-66 27 132-149 85M609 47l139 64-112 68 173 101M145 180l112 84-112 78M257 264l112-98 0 192M369 358l118-94 64 77M487 264l149-85 32 159M668 338l141-58"/>
+</g>
+<g fill="url(#g)"><circle cx="159" cy="179" r="7"/><circle cx="289" cy="216" r="7"/><circle cx="405" cy="155" r="7"/><circle cx="531" cy="241" r="7"/><circle cx="657" cy="175" r="7"/></g>
+<text x="54" y="67" fill="#61758b" font-family="Arial,sans-serif" font-size="17" letter-spacing="3">NUMERICAL METHODS</text><text x="54" y="108" fill="#17202c" font-family="Arial,sans-serif" font-size="34" font-weight="700">Discretize. Solve. Verify.</text>
+</svg>

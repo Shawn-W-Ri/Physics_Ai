@@ -1,0 +1,12 @@
+<div class="cards three">{% for lab in site.data.biosignal_labs %}<article class="card">
+<div class="card-media">
+<img src="{{ '/assets/img/biosignal-wave.svg' | relative_url }}" alt="生理信号示意波形" loading="lazy">
+</div>
+<div class="card-body">
+<span class="status-badge">{{ lab.status }}</span>
+<div class="card-num">BIOSIGNAL</div>
+<h3>{{ lab.title }}</h3>
+<p>{{ lab.summary }}</p>
+<a href="{{ lab.url | relative_url }}">查看实验规划 →</a>
+</div>
+</article>{% endfor %}</div>

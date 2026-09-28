@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07090d" />
+  <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}" />
+  <style>{% include site.css %}</style>
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳转到正文</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy"><span>Even · Research Lab</span><small>Physics · Simulation · Biosignals · Scientific AI</small></span>
+      </a>
+      <button class="menu-btn" aria-label="打开菜单" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="nav" aria-label="主导航">
+        {% for item in site.nav %}
+          <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">{{ content }}</main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Computational Science × Biosignals × AI</strong>
+        <p>Physics · Simulation · Biosignals · Scientific AI</p>
+      </div>
+      <div class="footer-links">
+        <a href="{{ '/research/' | relative_url }}">Research</a>
+        <a href="{{ '/biosignals/' | relative_url }}">Biosignals</a>
+        <a href="{{ '/notes/' | relative_url }}">Notes</a>
+        <a href="{{ '/labs/' | relative_url }}">Labs</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+---
+layout: default
+title: Regression Lab
+permalink: /labs/regression.html
+---
+<section class="page-hero"><div class="container narrow"><div class="eyebrow">LAB 02</div><h1>Linear Regression Playground</h1><p>观察数据生成机制、噪声和最小二乘拟合之间的关系。</p></div></section>
+<section class="section"><div class="container narrow"><div class="lab-panel">
+<canvas id="regCanvas" width="900" height="420"></canvas>
+<div class="controls stacked">
+<label>真实斜率 <input id="slope" type="range" min="-2" max="3" step="0.1" value="1.2"><span id="slopeVal">1.2</span></label>
+<label>噪声强度 <input id="noise" type="range" min="0" max="2" step="0.1" value="0.6"><span id="noiseVal">0.6</span></label>
+<button id="regen" class="btn primary">重新采样</button>
+</div><p id="fitInfo" class="muted"></p></div></div></section>
+<script>
+(() => {
+ const c=document.getElementById('regCanvas'),ctx=c.getContext('2d'); const slope=document.getElementById('slope'),noise=document.getElementById('noise'); const sv=document.getElementById('slopeVal'),nv=document.getElementById('noiseVal'),info=document.getElementById('fitInfo'); let pts=[];
+ function randn(){let u=0,v=0;while(!u)u=Math.random();while(!v)v=Math.random();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)}
+ function sample(){let m=+slope.value,s=+noise.value;pts=Array.from({length:45},()=>{let x=-3+6*Math.random(); return [x,m*x+0.6+s*randn()]});draw()}
+ function fit(){let n=pts.length,mx=pts.reduce((a,p)=>a+p[0],0)/n,my=pts.reduce((a,p)=>a+p[1],0)/n;let num=0,den=0;pts.forEach(p=>{num+=(p[0]-mx)*(p[1]-my);den+=(p[0]-mx)**2});let b1=num/den,b0=my-b1*mx;return[b0,b1]}
+ function X(x){return 60+(x+4)/8*(c.width-90)} function Y(y){return c.height-40-(y+7)/14*(c.height-70)}
+ function draw(){ctx.clearRect(0,0,c.width,c.height);ctx.strokeStyle='#29324d';for(let i=-3;i<=3;i++){ctx.beginPath();ctx.moveTo(X(i),25);ctx.lineTo(X(i),c.height-40);ctx.stroke()}for(let j=-6;j<=6;j+=2){ctx.beginPath();ctx.moveTo(60,Y(j));ctx.lineTo(c.width-30,Y(j));ctx.stroke()}ctx.fillStyle='#72e6c4';pts.forEach(p=>{ctx.beginPath();ctx.arc(X(p[0]),Y(p[1]),4,0,Math.PI*2);ctx.fill()});let [b0,b1]=fit();ctx.strokeStyle='#ffd36a';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(X(-4),Y(b0+b1*(-4)));ctx.lineTo(X(4),Y(b0+b1*4));ctx.stroke();info.textContent=`拟合结果：ŷ = ${b0.toFixed(2)} + ${b1.toFixed(2)}x`}
+ slope.oninput=()=>{sv.textContent=(+slope.value).toFixed(1);sample()};noise.oninput=()=>{nv.textContent=(+noise.value).toFixed(1);sample()};document.getElementById('regen').onclick=sample;sample();
+})();
+</script>

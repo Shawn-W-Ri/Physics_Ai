@@ -1,0 +1,20 @@
+- title: "ECG Filtering"
+  url: /labs/ecg-filtering.html
+  summary: "基线漂移、噪声与滤波"
+  status: "规划中"
+- title: "R-Peak Detection"
+  url: /labs/r-peak-detection.html
+  summary: "QRS 候选与 R 峰定位"
+  status: "规划中"
+- title: "PPG Heart Rate"
+  url: /labs/ppg-heart-rate.html
+  summary: "脉搏检测与心率估计"
+  status: "规划中"
+- title: "EMG Envelope"
+  url: /labs/emg-envelope.html
+  summary: "整流、RMS 与激活包络"
+  status: "规划中"
+- title: "EEG Spectrum"
+  url: /labs/eeg-spectrum.html
+  summary: "频谱与时频特征"
+  status: "规划中"
