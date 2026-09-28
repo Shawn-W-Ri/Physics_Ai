@@ -27,3 +27,5 @@ $$
 - 结论 1
 - 结论 2
 - 下一步
+
+<!-- 生理信号笔记使用 category: BIOSIGNAL，可自动进入 Notes 的 Biosignals 分类。 -->

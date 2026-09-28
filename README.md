@@ -1,4 +1,4 @@
-# Even · Simulation × AI
+# Even · Computational Science × Biosignals × AI
 
 这是一个可以直接部署到 **GitHub Pages** 的个人研究网站，目标是长期记录与展示：
 
@@ -10,6 +10,10 @@
 ## 你拿到的内容
 
 ### 网站页面
+
+- `biosignals.md`：六类生理信号与六阶段处理流程
+- 生理信号实验入口：ECG Filtering / R-Peak Detection / PPG Heart Rate / EMG Envelope / EEG Spectrum（规划中）
+- 新版信息架构、文件清单与部署说明见 `BIOSIGNALS_UPDATE.md`。
 - `index.md`：首页
 - `research.md`：研究方向
 - `notes.md`：文章 / 笔记列表
@@ -142,7 +146,7 @@ bundle exec jekyll serve
 | 改个人介绍 | `about.md` |
 | 每日发文章 | `_posts/*.md` |
 | 新增交互实验 | `labs/*.html` |
-| 改颜色 / 布局 | `assets/css/style.css` |
+| 改颜色 / 布局 | `_includes/site.css` |
 | 改导航 / Footer | `_layouts/default.html` |
 
 详细入门见 `GETTING_STARTED.md`，日常维护见 `MAINTENANCE.md`。

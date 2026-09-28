@@ -13,7 +13,7 @@ permalink: /about/
   </div>
   <div class="about-panel dark">
     <div class="eyebrow" style="color:#8590a2">STACK</div><h2>这个站会长期包含</h2>
-    <ul><li>Physics / PDE</li><li>Numerical Simulation</li><li>Statistics / Machine Learning</li><li>Deep Learning</li><li>Scientific Machine Learning</li><li>Interactive Labs</li><li>Paper Notes</li><li>Reproducible Projects</li></ul>
+    <ul><li>Physics / PDE</li><li>Numerical Simulation</li><li>Biosignals / Physiological Computing</li><li>Statistics / Machine Learning</li><li>Deep Learning</li><li>Scientific Machine Learning</li><li>Interactive Labs</li><li>Paper Notes</li><li>Reproducible Projects</li></ul>
     <h2 style="margin-top:34px">联系方式</h2><p>把这里替换成你的 GitHub、邮箱、Google Scholar、知乎、Bilibili 或其他主页即可。</p>
   </div>
 </div></section>

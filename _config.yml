@@ -1,7 +1,7 @@
-title: "Even · Simulation × AI"
-description: "Physics simulation, PDEs, numerical methods, statistics, machine learning and scientific AI."
-url: ""
-baseurl: ""
+title: "Even · Computational Science × Biosignals × AI"
+description: "Physics · Simulation · Biosignals · Scientific AI. 从方程到信号，从仿真到智能。"
+url: "https://shawn-w-ri.github.io"
+baseurl: "/Physics_Ai"
 markdown: kramdown
 kramdown:
   math_engine: mathjax
@@ -12,9 +12,21 @@ nav:
     url: /
   - title: Research
     url: /research/
+  - title: Biosignals
+    url: /biosignals/
   - title: Notes
     url: /notes/
   - title: Labs
     url: /labs/
   - title: About
     url: /about/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - GETTING_STARTED.md
+  - MAINTENANCE.md
+  - POST_TEMPLATE.md
+  - REDESIGN_DEPLOY.md
+  - BIOSIGNALS_UPDATE.md
