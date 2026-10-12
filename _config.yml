@@ -34,4 +34,6 @@ exclude:
   - BIOSIGNALS_UPDATE.md
   - tools
   - RESEARCH_COMPASS_INTEGRATION.md
+  - research-compass/catalog.json
+  - vercel.json
 

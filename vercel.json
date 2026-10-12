@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/research-compass/catalog.json",
+      "destination": "https://raw.githubusercontent.com/Shawn-W-Ri/Physics_Ai/main/research-compass/catalog.json"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/research-compass/catalog.json",
+      "headers": [
+        { "key": "x-vercel-enable-rewrite-caching", "value": "0" },
+        { "key": "Cache-Control", "value": "no-store, max-age=0" }
+      ]
+    }
+  ]
+}
