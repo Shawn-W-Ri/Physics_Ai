@@ -60,7 +60,8 @@ function harness(payload, {fail = false, protocol = 'https:', now = null} = {}) 
     },
     fetch: async (input) => {
       requests.push(String(input));
-      if (String(input) !== './catalog.json' || failure) throw new Error('fixture offline');
+      const requestUrl = new URL(String(input), 'https://example.test/Physics_Ai/research-compass/');
+      if (requestUrl.pathname !== '/Physics_Ai/research-compass/catalog.json' || failure) throw new Error('fixture offline');
       return {ok: true, json: async () => clone(payload)};
     },
     addEventListener() {}, scrollTo() {}
@@ -139,7 +140,19 @@ async function run() {
     await seed.settle();
     seed.has('目录已载入'); seed.has('尚无定时运行证据'); seed.has('尚无来源抓取成功记录');
     assert.ok(!seed.html().includes('任务已启用'));
-    assert.equal(seed.requests.filter(x => x === './catalog.json').length, 1);
+    const catalogRequests = seed.requests.filter(x => x.startsWith('./catalog.json?'));
+    assert.equal(catalogRequests.length, 1);
+    const cacheMinute = new URL(catalogRequests[0], 'https://example.test/Physics_Ai/research-compass/').searchParams.get('refresh');
+    assert.match(cacheMinute, /^\d+$/);
+    assert.ok(Math.abs(Number(cacheMinute) - Math.floor(Date.now() / 60000)) <= 1, 'Catalog cache key changes by minute without leaving the relative subpath.');
+    const paperQuery = () => [...seed.requests].reverse().map(value => new URL(value, 'https://example.test/Physics_Ai/research-compass/')).find(value => value.hostname === 'www.ebi.ac.uk')?.searchParams.get('query') || '';
+    assert.ok(paperQuery().includes('TITLE_ABS:"arteriovenous fistula"'));
+    assert.ok(paperQuery().includes('TITLE_ABS:"photoplethysmography"'));
+    seed.click('topic', 'physics'); await seed.settle();
+    const scopedQuery = paperQuery();
+    assert.match(scopedQuery, /TITLE_ABS:"physics informed".*\) AND \(TITLE_ABS:"cardiovascular"/);
+    assert.ok(scopedQuery.includes('AND FIRST_PDATE:'));
+    assert.ok(!scopedQuery.includes('biomedical'), 'A generic biomedical mention is not sufficient for a methods recommendation.');
     seed.click('show-groups');
     assert.equal((seed.html().match(/class="card group-card"/g) || []).length, published.catalog.groups.length);
     seed.nav('opportunities'); seed.has('机会清单');
@@ -200,6 +213,28 @@ async function run() {
     assert.equal(loaded.records.get('research-compass-v1'), savedRecord);
   } finally { loaded.close(); }
 
+  const qualityCatalog = clone(catalog);
+  const genericTitles = ['Research', 'Top research', 'Responsible research', 'Research infrastructures', 'News and events'];
+  qualityCatalog.news = [
+    ...genericTitles.map((title, i) => ({id: `navigation-${i}`, title, kind: 'news', discoveredAt: stamp, url: `https://example.org/en/navigation-${i}`})),
+    {id: 'researcher-profile', title: 'A researcher profile', kind: 'news', discoveredAt: stamp, url: 'https://example.org/en/researchers/alex-smith'},
+    {id: 'person-profile', title: 'Another researcher profile', kind: 'news', discoveredAt: stamp, url: 'https://example.org/persons/jane-doe/'},
+    {id: 'specific-news', title: 'Research infrastructures support new optical blood-flow measurements', kind: 'news', discoveredAt: stamp, url: 'https://example.org/news/optical-blood-flow-project'},
+    {id: 'actual-event', title: 'News and events from the AVF acoustic sensing workshop', kind: 'event', discoveredAt: stamp, url: 'https://example.org/events/avf-sensing-workshop'}
+  ];
+  const quality = harness({catalog: qualityCatalog, update: fetchedUpdate});
+  try {
+    await quality.settle();
+    quality.has('Research infrastructures support new optical blood-flow measurements');
+    quality.has('News and events from the AVF acoustic sensing workshop');
+    assert.equal((quality.html().match(/class="card news-card"/g) || []).length, 2);
+    for (let i = 0; i < genericTitles.length; i++) assert.ok(!quality.html().includes(`https://example.org/en/navigation-${i}`));
+    assert.ok(!quality.html().includes('https://example.org/en/researchers/alex-smith'));
+    assert.ok(!quality.html().includes('https://example.org/persons/jane-doe/'));
+    quality.click('show-groups');
+    assert.equal((quality.html().match(/class="card group-card"/g) || []).length, published.catalog.groups.length, 'Filtering news must not remove research groups.');
+  } finally { quality.close(); }
+
   const orderedCatalog = clone(catalog);
   orderedCatalog.news = [
     {id: 'old-discovery', title: 'OLDER DISCOVERY', kind: 'news', url: 'https://example.org/older', publishedAt: null, discoveredAt: '2001-01-01T12:00:00Z'},
@@ -236,13 +271,13 @@ async function run() {
       await offline.settle(); offline.has('当前使用内置资料');
       offline.nav('english'); offline.has('DAY 01 / 30');
       assert.ok(!offline.html().includes('已有定时运行证据'));
-      if (options.protocol === 'file:') assert.ok(!offline.requests.includes('./catalog.json'));
+      if (options.protocol === 'file:') assert.ok(!offline.requests.some(value => value.startsWith('./catalog.json')));
     } finally { offline.close(); }
   }
   const malformed = harness({unexpected: true});
   try { await malformed.settle(); malformed.has('当前使用内置资料'); } finally { malformed.close(); }
 
-  console.log('PASS: static paths and four features; truthful update records; discovery ordering and review reasons; precise timezone deadlines and priority rules; saved practice and data fallbacks.');
+  console.log('PASS: relative catalog cache refresh; scoped paper queries and news quality; static paths and four features; truthful updates; discovery ordering; precise deadlines; saved practice and fallbacks.');
 }
 
 run().catch(err => { console.error(err); process.exitCode = 1; });

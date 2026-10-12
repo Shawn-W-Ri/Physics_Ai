@@ -6,11 +6,11 @@
   const e = C.escape;
   const KEY = 'research-compass-v1', CACHE = 'research-compass-papers-v1';
   const topics = [
-    {id:'avf',name:'AVF与血管声学',query:'("arteriovenous fistula" AND (acoustic OR vibration OR hemodynamics OR stenosis))'},
-    {id:'flow',name:'血流与FSI',query:'(("fluid structure interaction" OR "computational fluid dynamics") AND (vascular OR cardiovascular))'},
-    {id:'optics',name:'光学可穿戴',query:'(photoplethysmography OR "diffuse correlation spectroscopy" OR "laser speckle") AND (blood OR wearable)'},
-    {id:'physics',name:'物理驱动学习',query:'("physics informed" OR "inverse modeling" OR "simulation to real") AND (cardiovascular OR photoacoustic OR biomedical)'},
-    {id:'robust',name:'鲁棒与多通道',query:'(denoising OR "motion artifact" OR "sensor fusion") AND (photoplethysmography OR "heart sound" OR "vascular sound")'}
+    {id:'avf',name:'AVF与血管声学',query:'(TITLE_ABS:"arteriovenous fistula" AND (TITLE_ABS:"acoustic" OR TITLE_ABS:"vibration" OR TITLE_ABS:"hemodynamics" OR TITLE_ABS:"haemodynamics" OR TITLE_ABS:"stenosis"))'},
+    {id:'flow',name:'血流与FSI',query:'((TITLE_ABS:"fluid structure interaction" OR TITLE_ABS:"computational fluid dynamics") AND (TITLE_ABS:"vascular" OR TITLE_ABS:"cardiovascular" OR TITLE_ABS:"hemodynamics" OR TITLE_ABS:"haemodynamics"))'},
+    {id:'optics',name:'光学可穿戴',query:'((TITLE_ABS:"photoplethysmography" OR TITLE_ABS:"diffuse correlation spectroscopy" OR TITLE_ABS:"laser speckle" OR TITLE_ABS:"near infrared spectroscopy") AND (TITLE_ABS:"blood" OR TITLE_ABS:"perfusion" OR TITLE_ABS:"vascular" OR TITLE_ABS:"heart rate" OR TITLE_ABS:"hemoglobin" OR TITLE_ABS:"haemoglobin"))'},
+    {id:'physics',name:'物理驱动学习',query:'((TITLE_ABS:"physics informed" OR TITLE_ABS:"inverse modeling" OR TITLE_ABS:"inverse problems" OR TITLE_ABS:"domain adaptation" OR TITLE_ABS:"simulation to real") AND (TITLE_ABS:"cardiovascular" OR TITLE_ABS:"vascular" OR TITLE_ABS:"hemodynamics" OR TITLE_ABS:"haemodynamics" OR TITLE_ABS:"photoplethysmography" OR TITLE_ABS:"photoacoustic"))'},
+    {id:'robust',name:'鲁棒与多通道',query:'((TITLE_ABS:"denoising" OR TITLE_ABS:"motion artifact" OR TITLE_ABS:"sensor fusion") AND (TITLE_ABS:"photoplethysmography" OR TITLE_ABS:"heart sound" OR TITLE_ABS:"vascular sound"))'}
   ];
   const authors = {G01:['Bykov A','Bykau A'],G02:['Myllyla T'],G03:['Tarvainen T'],G04:['Hauptmann A'],G05:['Vehkaoja A'],G06:['Koivisto T','Kaisti M'],G07:['Sarkka S'],G08:['Nieminen H'],G09:['Salmi A'],G10:['Siltanen S'],G11:['Leppanen T','Kainulainen S'],G12:['Sornmo L'],G13:['Marlevi D'],G14:['Larsson M'],G15:['Dual S'],G16:['Stromberg T','Fredriksson I'],G17:['Dyverfeldt P','Ebbers T'],G18:['Broome M'],G19:['Oktem O'],G20:['Valen-Sendstad K'],G21:['Lovstakken L','Smistad E'],G22:['Randeberg L'],G23:['Austeng A','Nasholm S'],G24:['Schmidt SE','Struijk JJ'],G25:['Jensen JA'],G26:['Untracht G','Andersen PE'],G27:['Colombo M'],G28:['Arnardottir ES']};
   const names = {research:'科研动态',opportunities:'博后与访问',funding:'国际资助',english:'每日英语'};
@@ -84,8 +84,13 @@
     return `<section class="focus-section">${section('今日重点','只显示仍开放的岗位、访问与资助')}<div class="focus-grid">${items.length?items.map(x=>`<article class="focus-card"><span class="eyebrow">${x.target==='funding'?'国际资助':['visit','exchange'].includes(x.kind)?'访问与交流':'博后岗位'}</span><h3>${e(x.title)}</h3><p>${e(x.reasons.join(' · '))}</p>${button('open-focus','查看详情 →','text-link',`data-id="${e(x.id)}" data-target="${x.target}"`)}</article>`).join(''):'<div class="focus-empty">当前资料中没有符合条件的重要开放机会。可继续查看完整目录与官方来源。</div>'}</div></section>`;
   }
   function newsOrderTime(item) {return validStamp(item.discoveredAt)?Date.parse(item.discoveredAt):validStamp(item.publishedAt)?Date.parse(item.publishedAt):0;}
+  function displayableNews(item) {
+    const title=String(item.title||'').normalize('NFKC').toLowerCase().replace(/\s*&\s*/g,' and ').replace(/\s+/g,' ').replace(/[\s.:：]+$/g,'').trim();
+    if(['research','top research','responsible research','research infrastructures','research infrastructure','news and events'].includes(title))return false;
+    try{return !/\/(?:researchers|persons)\/[^/]+\/?$/i.test(new URL(item.url).pathname);}catch{return false;}
+  }
   function newsPanel() {
-    const items=(Array.isArray(D.news)?D.news:[]).filter(n=>groupQuery?n.groupId===groupQuery:!n.groupId||state.followed.includes(n.groupId)).sort((a,b)=>newsOrderTime(b)-newsOrderTime(a)||Number(a.kind==='paper')-Number(b.kind==='paper')).slice(0,6);
+    const items=(Array.isArray(D.news)?D.news:[]).filter(displayableNews).filter(n=>groupQuery?n.groupId===groupQuery:!n.groupId||state.followed.includes(n.groupId)).sort((a,b)=>newsOrderTime(b)-newsOrderTime(a)||Number(a.kind==='paper')-Number(b.kind==='paper')).slice(0,6);
     const kinds={paper:'论文动态',news:'团队新闻',project:'项目进展',event:'活动与交流'};
     return `<section class="team-news">${section('团队动态',coverageText('news'))}<div class="stack">${items.length?items.map(n=>`<article class="card news-card"><div class="card-top"><span class="badge blue">${e(n.verification==='source-change'?'官网变化 · 待读':n.verification==='discovered-link'?'新链接 · 待读':kinds[n.kind]||'团队动态')}</span><span class="card-meta">${validStamp(n.publishedAt)?'发表 '+e(n.publishedAt.slice(0,10)):'发布日期未提供'}</span></div><h3>${link(n.url,n.title,'paper-title')}</h3><p class="card-meta">${e(n.groupName||D.groups.find(g=>g.id===n.groupId)?.name||'相关领域')}</p><p>${e((n.summary||'').slice(0,180))}${(n.summary||'').length>180?'…':''}</p>${(n.summary||'').length>180?`<details><summary>查看完整说明</summary><p>${e(n.summary)}</p></details>`:''}<div class="card-footer">${link(n.url,'原始来源')}<span class="news-dates">${validStamp(n.discoveredAt)?'发现 '+e(formatTime(n.discoveredAt)):''}${validStamp(n.checkedAt)?(validStamp(n.discoveredAt)?' · ':'')+'来源获取 '+e(n.checkedAt.slice(0,10)):''}</span></div></article>`).join(''):empty('尚无已同步的团队动态',catalogState.connected?'目录尚未包含你所关注团队的动态；下方仍可阅读相关论文。':'载入目录后显示团队新闻、项目与活动；当前仍可阅读下方论文。')}</div></section>`;
   }
@@ -95,7 +100,7 @@
     catalogState.loading=true;catalogState.error='';render();
     const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),15000);
     try {
-      const response=await fetch('./catalog.json',{signal:ctl.signal,credentials:'same-origin',cache:'no-store'});
+      const response=await fetch('./catalog.json?refresh='+Math.floor(Date.now()/60000),{signal:ctl.signal,credentials:'same-origin',cache:'no-store'});
       if(!response.ok)throw new Error('目录文件暂时不可用');
       const payload=await response.json(),catalog=payload?.catalog;
       if(!catalog||typeof catalog!=='object'||!['groups','opportunities','funding','news'].some(key=>Array.isArray(catalog[key])))throw new Error('目录文件格式不完整');
@@ -205,7 +210,7 @@
     if(groupQuery) base='('+((authors[groupQuery]||[]).map(a=>`AUTH:"${a}"`).join(' OR ')||'cardiovascular')+')';
     else base='('+topics.filter(x=>topic==='all'?state.topics.includes(x.id):x.id===topic).map(x=>'('+x.query+')').join(' OR ')+')';
     const start=new Date(Date.parse(today+'T00:00:00Z')-730*86400000).toISOString().slice(0,10);
-    return `${base} FIRST_PDATE:[${start} TO ${today}] sort_date:y`;
+    return `${base} AND FIRST_PDATE:[${start} TO ${today}] sort_date:y`;
   }
   function epmcUrl() {return 'https://europepmc.org/search?query='+encodeURIComponent(buildQuery());}
   function stripHtml(t) { const el=document.createElement('div');el.innerHTML=t||'';return el.textContent||''; }
