@@ -1,0 +1,122 @@
+name: Research Compass daily update
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/research-compass-daily.yml'
+      - 'tools/research_compass/**'
+    # Generated catalog/state paths intentionally do not match, preventing
+    # recursive runs. A push verifies cloud execution, not a scheduled run;
+    # update.py records schedule evidence only for a real schedule event.
+  schedule:
+    # 00:00 UTC = 08:00 Asia/Shanghai. GitHub schedules can be delayed.
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: research-compass-daily
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.repository == 'Shawn-W-Ri/Physics_Ai' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    outputs:
+      revision: ${{ steps.revision.outputs.value }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Check updater
+        run: python -m unittest discover -s tools/research_compass -p 'test_*.py'
+      - name: Check front end
+        run: node tools/research_compass/frontend-smoke.cjs
+      - name: Fetch official sources and preserve previous data on failure
+        id: fetch
+        continue-on-error: true
+        run: >-
+          python tools/research_compass/update.py
+          --catalog research-compass/catalog.json
+          --sources tools/research_compass/sources.json
+          --state _data/research-compass-source-state.json
+      - name: Read revision
+        id: revision
+        run: |
+          python - <<'PY'
+          import json, os
+          with open('research-compass/catalog.json', encoding='utf-8') as f:
+              update = json.load(f)['update']
+              revision = str(update['revision'])
+          if revision != os.environ['GITHUB_RUN_ID'] + '-' + os.environ['GITHUB_RUN_ATTEMPT']:
+              raise SystemExit('The updater did not produce a revision for this run')
+          if not revision.replace('-', '').isalnum():
+              raise SystemExit('Invalid revision')
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as f:
+              f.write('value=' + revision + '\n')
+          PY
+      - name: Commit only generated research data
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- research-compass/catalog.json _data/research-compass-source-state.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'Update Research Compass source observations'
+          git pull --rebase origin "$DEFAULT_BRANCH"
+          git push origin "HEAD:$DEFAULT_BRANCH"
+      - name: Report source failures
+        if: always()
+        env:
+          FETCH_OUTCOME: ${{ steps.fetch.outcome }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          path = Path('research-compass/catalog.json')
+          if not path.exists():
+              raise SystemExit('No catalog available')
+          payload = json.loads(path.read_text(encoding='utf-8'))
+          rows = payload.get('update', {}).get('coverage', {})
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
+              f.write('## Research Compass source observations\n\n')
+              for key in ('news', 'opportunities', 'visits', 'funding'):
+                  row = rows.get(key, {})
+                  f.write(f"- {key}: {row.get('status', 'missing')}; {row.get('message', '')}\n")
+              f.write('\nFetching a page does not verify eligibility or an open application.\n')
+          if any(rows.get(k, {}).get('status') in (None, 'failed', 'error', 'never')
+                 for k in ('news', 'opportunities', 'visits', 'funding')):
+              raise SystemExit('One or more categories have no successful source observations; previous records were retained.')
+          if os.environ.get('FETCH_OUTCOME') != 'success':
+              raise SystemExit('The source update step failed; see its log.')
+          PY
+
+  verify-live-data:
+    needs: update
+    if: always() && needs.update.outputs.revision != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Verify published catalog after the existing hosting deployment
+        env:
+          PUBLIC_URL: ${{ vars.RESEARCH_COMPASS_PUBLIC_URL || 'https://www.aiphysics.me/research-compass/catalog.json' }}
+          EXPECTED_REVISION: ${{ needs.update.outputs.revision }}
+        run: |
+          python tools/research_compass/verify_live.py --url "$PUBLIC_URL" --revision "$EXPECTED_REVISION"

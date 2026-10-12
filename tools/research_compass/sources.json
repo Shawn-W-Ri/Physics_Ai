@@ -1,0 +1,517 @@
+{
+  "preparedAt": "2026-10-12",
+  "timezone": "Asia/Shanghai",
+  "scope": "28个既有北欧团队为重点，同时全球检索与AVF、心血管数值模拟、光学可穿戴、信号处理、物理驱动学习相关机会。并非覆盖世界上所有团队与资金。",
+  "keywords": {
+    "core": [
+      "arteriovenous fistula",
+      "vascular stenosis",
+      "hemodynamics",
+      "haemodynamics",
+      "cardiovascular modelling",
+      "fluid structure interaction"
+    ],
+    "optics": [
+      "biomedical optics",
+      "biophotonics",
+      "photoplethysmography",
+      "diffuse correlation spectroscopy",
+      "near infrared spectroscopy",
+      "laser speckle",
+      "wearable sensors"
+    ],
+    "methods": [
+      "inverse problems",
+      "physics informed machine learning",
+      "scientific machine learning",
+      "domain adaptation",
+      "sim to real",
+      "signal denoising",
+      "edge AI"
+    ],
+    "career": [
+      "postdoctoral",
+      "postdoc",
+      "research fellow",
+      "visiting researcher",
+      "visiting scholar",
+      "hosting",
+      "mobility",
+      "fellowship"
+    ]
+  },
+  "verifiedInfrastructure": [
+    {
+      "name": "Europe PMC REST API",
+      "type": "public-api",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "documentation": "https://europepmc.org/RestfulWebService",
+      "verifiedAt": "2026-10-12",
+      "verification": "官方文档核实支持JSON与core元数据；本轮未完成执行环境直连接口测试。",
+      "use": "每组作者/机构组合检索最近90天，并按DOI去重；另以研究关键词查最近30天。core返回作者机构与摘要时用于核实。论文原发表日保留，发现日单列。不得仅按姓名认定团队归属。"
+    },
+    {
+      "name": "Crossref REST API",
+      "type": "public-api",
+      "url": "https://api.crossref.org/works",
+      "documentation": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "verifiedAt": "2026-10-12",
+      "verification": "官方文档核实公开访问无需注册，支持author/affiliation查询及日期过滤。",
+      "use": "Europe PMC之外的光学/工程论文补充；增量使用from-index-date，展示出版日期。不要把数据库收录日当论文发布日期。遵守限速，不虚构联系邮箱。"
+    },
+    {
+      "name": "EURAXESS jobs, funding and hosting",
+      "type": "official-html-index",
+      "url": "https://euraxess.ec.europa.eu/jobs/search",
+      "verifiedAt": "2026-10-12",
+      "verification": "列表可读取JOB、日期、研究方向和独立截止日；官网同时列有FUNDING与HOSTING分类。",
+      "use": "每天按核心、光学、方法三组关键词检索，区分offer type，再打开详情与原机构招聘页。HOSTING不等于已有薪资或已获经费。当前未核实稳定公开RSS/API，不依赖猜测接口。"
+    },
+    {
+      "name": "KTH vacancies",
+      "type": "official-html-index",
+      "url": "https://www.kth.se/lediga-jobb?l=en",
+      "verifiedAt": "2026-10-12",
+      "verification": "岗位标题和截止日可读取；官网提供Vacancies as RSS链接，本轮feed访问未成功。",
+      "use": "默认读取官方HTML，发现岗位后跟随原公告。RSS仅在实际端点测试通过后启用。"
+    },
+    {
+      "name": "Tampere vacancies",
+      "type": "official-html-index",
+      "url": "https://www.tuni.fi/en/tau/work-with-us/open-positions",
+      "verifiedAt": "2026-10-12",
+      "verification": "英文岗位标题、独立公告链接、申请结束时间可读取。",
+      "use": "每天筛选博后/研究员，博士生岗位不得混入博后。光声气溶胶等仅方法相邻方向须明示。"
+    },
+    {
+      "name": "KI vacancies",
+      "type": "official-html-index",
+      "url": "https://ki.se/en/about-ki/jobs-at-ki/available-positions-at-ki",
+      "verifiedAt": "2026-10-12",
+      "verification": "官方页面可读取。",
+      "use": "跟随具体招聘公告，区分雇佣博后与奖学金博后。"
+    },
+    {
+      "name": "NTNU vacancies",
+      "type": "official-html-index",
+      "url": "https://www.ntnu.edu/vacancies",
+      "verifiedAt": "2026-10-12",
+      "verification": "官方页面可读取。",
+      "use": "跟随详情和Jobbnorge等学校链接的原招聘系统。"
+    },
+    {
+      "name": "Aalto AScI visits",
+      "type": "official-call",
+      "url": "https://www.aalto.fi/en/aalto-university-science-institute-asci",
+      "verifiedAt": "2026-10-12",
+      "verification": "持续开放且2027年继续；理学院接待方提交，博士1周至2个月、博后及以上1至4周；每月末受理，6/7月除外。",
+      "use": "每日核对条款/时间变化；这是一项访问资助机制，不是用户已获接收，也不是任何Aalto团队均适用。"
+    },
+    {
+      "name": "DTU guests and visiting researchers",
+      "type": "official-process",
+      "url": "https://www.dtu.dk/english/about/job-and-career/guests-and-visiting-researchers",
+      "verifiedAt": "2026-10-12",
+      "verification": "官方访问接洽流程可读取。",
+      "use": "长期流程入口保留portal状态。发现具体访问call后才另建open记录。"
+    },
+    {
+      "name": "MSCA funding index",
+      "type": "official-html-index",
+      "url": "https://marie-sklodowska-curie-actions.ec.europa.eu/funding",
+      "verifiedAt": "2026-10-12",
+      "verification": "官方资助列表可读取。",
+      "use": "每天核对下一轮PF公告与官方Funding & Tenders链接，不从往年推算截止日。"
+    },
+    {
+      "name": "Humboldt Research Fellowship",
+      "type": "official-call",
+      "url": "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship",
+      "verifiedAt": "2026-10-12",
+      "verification": "当前达到申请数上限，不能新建申请；下轮2026-11-15开放。",
+      "use": "每天检查顶部即时申请状态，开放日期临近时突出为即将开放；到日期不自动宣称已开放，要重新核实。"
+    }
+  ],
+  "groupSources": [
+    {
+      "id": "G01",
+      "name": "奥卢大学 Biophotonics",
+      "people": "Aliaksandr Bykau／Alexander Bykov",
+      "url": "https://www.oulu.fi/en/research-groups/biophotonics",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G02",
+      "name": "奥卢大学 Myllylä Group",
+      "people": "Teemu Myllylä",
+      "url": "https://www.oulu.fi/en/research-groups/myllyla-group",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G03",
+      "name": "东芬兰大学 Optical Imaging 与逆问题团队",
+      "people": "Tanja Tarvainen",
+      "url": "https://sites.uef.fi/inverse/research-areas/optical-imaging/",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G04",
+      "name": "奥卢大学 Computational Mathematics",
+      "people": "Andreas Hauptmann",
+      "url": "https://www.oulu.fi/en/researchers/andreas-hauptmann",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G05",
+      "name": "坦佩雷大学 Sensor Technology and Biomeasurements",
+      "people": "Antti Vehkaoja",
+      "url": "https://research.tuni.fi/stb/contact/",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G06",
+      "name": "图尔库大学 Health Technology相关团队",
+      "people": "Tero Koivisto／Mikko Pänkäälä／Matti Kaisti",
+      "url": "https://research.utu.fi/converis/portal/detail/Person/790094?lang=en_US",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G07",
+      "name": "阿尔托大学 Sensor Informatics",
+      "people": "Simo Särkkä",
+      "url": "https://users.aalto.fi/~ssarkka/",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G08",
+      "name": "阿尔托大学 MEDUSA",
+      "people": "Heikki Nieminen",
+      "url": "https://www.aalto.fi/en/department-of-neuroscience-and-biomedical-engineering/medical-ultrasonics-laboratory-medusa",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G09",
+      "name": "赫尔辛基大学 Ultrasound与机器学习合作方向",
+      "people": "Ari Salmi／Arto Klami",
+      "url": "https://researchportal.helsinki.fi/en/persons/ari-salmi/",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G10",
+      "name": "赫尔辛基大学 Inverse Problems",
+      "people": "Samuli Siltanen",
+      "url": "https://www.helsinki.fi/en/researchgroups/inverse-problems/research",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G11",
+      "name": "东芬兰大学 STAR",
+      "people": "Timo Leppänen／Samu Kainulainen",
+      "url": "https://uefconnect.uef.fi/en/sleep-technology-and-analytics-research-star-group/",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G12",
+      "name": "隆德大学 AVF血管声学历史研究线",
+      "people": "Marco Munguia Mena／Bengt Mandersson；相关生物医学信号方向Leif Sörnmo",
+      "url": "https://portal.research.lu.se/en/publications/analysis-of-the-vascular-sounds-of-the-arteriovenous-fistula/",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G13",
+      "name": "卡罗林斯卡医学院 转化心血管成像",
+      "people": "David Marlevi",
+      "url": "https://ki.se/en/people/david-marlevi",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G14",
+      "name": "KTH Medical Imaging",
+      "people": "Matilda Larsson",
+      "url": "https://www.kth.se/profile/matil/?l=en",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G15",
+      "name": "KTH I-HeaL",
+      "people": "Seraina Dual",
+      "url": "https://app.kth.se/profile/seraina",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G16",
+      "name": "林雪平大学 Biomedical Optics",
+      "people": "Tomas Strömberg／Marcus Larsson／Ingemar Fredriksson",
+      "url": "https://liu.se/medarbetare/tomst50",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G17",
+      "name": "林雪平大学 心血管流动成像与建模",
+      "people": "Tino Ebbers／Petter Dyverfeldt／Jonas Lantz／Matts Karlsson",
+      "url": "https://liu.se/en/research/heart4flow",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G18",
+      "name": "卡罗林斯卡医学院 心血管系统模拟方向",
+      "people": "Michael Broomé",
+      "url": "https://ki.se/en/fyfa/research/division-for-anesthesiology-and-intensive-care",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G19",
+      "name": "KTH 逆问题与学习重建",
+      "people": "Ozan Öktem",
+      "url": "https://www.kth.se/profile/ozan?l=en",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G20",
+      "name": "Simula Computational Physiology",
+      "people": "Kristian Valen-Sendstad及合作团队",
+      "url": "https://www.simula.no/people/kvs",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G21",
+      "name": "NTNU Ultrasound Research Group",
+      "people": "Lasse Løvstakken／Svein-Erik Måsøy／Erik Smistad等",
+      "url": "https://www.ntnu.edu/isb/ultrasound",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G22",
+      "name": "NTNU Biomedical Optics",
+      "people": "Lise Lyngsnes Randeberg",
+      "url": "https://www.ntnu.edu/employees/lisel",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G23",
+      "name": "奥斯陆大学 DSB",
+      "people": "Andreas Austeng／Sven Peter Näsholm",
+      "url": "https://www.visual-intelligence.no/people/andreas-austeng",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G24",
+      "name": "奥尔堡大学 CardioTech",
+      "people": "Samuel Emil Schmidt／Johannes Jan Struijk",
+      "url": "https://vbn.aau.dk/da/persons/sschmidt/",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G25",
+      "name": "DTU CFU与哥本哈根临床超声合作网络",
+      "people": "Jørgen Arendt Jensen／Michael Bachmann Nielsen／Kristoffer L. Hansen等",
+      "url": "https://www.healthtech.dtu.dk/Research/Research-Sections/Section-UltraSound-and-Biomechanics-USB",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G26",
+      "name": "DTU Biophotonic Imaging",
+      "people": "Peter E. Andersen／Gavrielle Untracht",
+      "url": "https://www.healthtech.dtu.dk/research/research-sections/section-optical-sensing-and-imaging-systems-oasis/group-biophotonic-imaging",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G27",
+      "name": "奥胡斯大学 CAReENG与CAVELab合作网络",
+      "people": "Monika Colombo／Peter Johansen",
+      "url": "https://mpe.au.dk/en/about-the-department/sections/fluids-and-energy/research-groups/cardiovascular-engineering-and-bio-fluids-applications",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    },
+    {
+      "id": "G28",
+      "name": "雷克雅未克大学 Sleep Institute RUSI",
+      "people": "Erna Sif Arnardóttir；与UEF合作",
+      "url": "https://svefnsetrid.ru.is/en/",
+      "sourceRole": "团队/成员/研究介绍；其存在不证明当前招聘；G12为历史研究线，应避免误称现存独立团队。"
+    }
+  ],
+  "existingOpportunitySources": [
+    {
+      "id": "opp-aalto-asci-visit",
+      "url": "https://www.aalto.fi/en/aalto-university-science-institute-asci",
+      "applicationUrl": null,
+      "kind": "visit",
+      "sourceRole": "复核既有条目；搜索入口同时承担发现新公告。"
+    },
+    {
+      "id": "opp-flatiron-ccm-2027",
+      "url": "https://www.simonsfoundation.org/flatiron/careers/?tab=job-openings",
+      "applicationUrl": "https://apply.interfolio.com/193799",
+      "kind": "postdoc",
+      "sourceRole": "复核既有条目；搜索入口同时承担发现新公告。"
+    },
+    {
+      "id": "opp-usc-applegate-2026",
+      "url": "https://usc.wd5.myworkdayjobs.com/en-US/ExternalUSCCareers/job/Postdoctoral-Scholar---Research-Associate_REQ20178764",
+      "applicationUrl": null,
+      "kind": "postdoc",
+      "sourceRole": "复核既有条目；搜索入口同时承担发现新公告。"
+    },
+    {
+      "id": "opp-aalto-audio-2026",
+      "url": "https://www.aalto.fi/en/open-positions/postdoctoral-researcher-in-speech-and-language-technology",
+      "applicationUrl": null,
+      "kind": "postdoc",
+      "sourceRole": "复核既有条目；搜索入口同时承担发现新公告。"
+    },
+    {
+      "id": "opp-simula-acleanbrain-closed",
+      "url": "https://www.simula.no/careers/job-openings/postdoctoral-fellowship-available-in-scientific-computing-at-simula-research-laboratory",
+      "applicationUrl": null,
+      "kind": "postdoc",
+      "sourceRole": "复核既有条目；搜索入口同时承担发现新公告。"
+    },
+    {
+      "id": "opp-euraxess-portal",
+      "url": "https://euraxess.ec.europa.eu/jobs/search",
+      "applicationUrl": null,
+      "kind": "portal",
+      "sourceRole": "复核既有条目；搜索入口同时承担发现新公告。"
+    },
+    {
+      "id": "opp-oulu-portal",
+      "url": "https://www.oulu.fi/en/university/careers",
+      "applicationUrl": null,
+      "kind": "portal",
+      "sourceRole": "复核既有条目；搜索入口同时承担发现新公告。"
+    },
+    {
+      "id": "opp-ki-portal",
+      "url": "https://ki.se/en/about-ki/jobs-at-ki/available-positions-at-ki",
+      "applicationUrl": null,
+      "kind": "portal",
+      "sourceRole": "复核既有条目；搜索入口同时承担发现新公告。"
+    },
+    {
+      "id": "opp-kth-portal",
+      "url": "https://www.kth.se/lediga-jobb?l=en",
+      "applicationUrl": null,
+      "kind": "portal",
+      "sourceRole": "复核既有条目；搜索入口同时承担发现新公告。"
+    },
+    {
+      "id": "opp-dtu-visit-portal",
+      "url": "https://www.dtu.dk/english/about/job-and-career/guests-and-visiting-researchers",
+      "applicationUrl": null,
+      "kind": "portal",
+      "sourceRole": "复核既有条目；搜索入口同时承担发现新公告。"
+    },
+    {
+      "id": "opp-tampere-portal",
+      "url": "https://www.tuni.fi/en/tau/work-with-us/open-positions",
+      "applicationUrl": null,
+      "kind": "portal",
+      "sourceRole": "复核既有条目；搜索入口同时承担发现新公告。"
+    },
+    {
+      "id": "opp-ntnu-portal",
+      "url": "https://www.ntnu.edu/vacancies",
+      "applicationUrl": null,
+      "kind": "portal",
+      "sourceRole": "复核既有条目；搜索入口同时承担发现新公告。"
+    }
+  ],
+  "fundingSources": [
+    {
+      "id": "msca-pf",
+      "name": "MSCA Postdoctoral Fellowships 玛丽·居里博后",
+      "url": "https://marie-sklodowska-curie-actions.ec.europa.eu/funding/msca-postdoctoral-fellowships-2027",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "humboldt-postdoc",
+      "name": "Humboldt Research Fellowship 洪堡研究奖学金",
+      "url": "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "jsps-standard",
+      "name": "JSPS 外国人特别研究员 Standard",
+      "url": "https://www.jsps.go.jp/english/e-fellow/e-ippan/appliguidelines.html",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "newton-international",
+      "name": "Newton International Fellowships 牛顿国际博后",
+      "url": "https://royalsociety.org/grants/newton-international/",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "eth-fellows",
+      "name": "ETH Zurich Postdoctoral Fellowships",
+      "url": "https://grantsoffice.ethz.ch/funding-opportunities/internal/eth-fellowships.html",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "branco-weiss",
+      "name": "Branco Weiss Fellowship",
+      "url": "https://brancoweissfellowship.org/who-should-apply/timelines/",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "wellcome-early-career",
+      "name": "Wellcome Early-Career Awards",
+      "url": "https://wellcome.org/research-funding/schemes/wellcome-early-career-awards",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "aha-postdoctoral",
+      "name": "American Heart Association 博后资助",
+      "url": "https://professional.heart.org/en/research-programs/aha-funding-opportunities/postdoctoral-fellowship",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "hfsp-postdoctoral",
+      "name": "HFSP Long-Term / Cross-Disciplinary Fellowships",
+      "url": "https://www.hfsp.org/funding/hfsp-funding/postdoctoral-fellowships",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "embo-postdoctoral",
+      "name": "EMBO Postdoctoral Fellowships",
+      "url": "https://www.embo.org/funding/fellowships-grants-and-career-support/postdoctoral-fellowships/",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "schmidt-science-fellows",
+      "name": "Schmidt Science Fellows",
+      "url": "https://schmidtsciencefellows.org/selection/who-can-apply/",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "fripro-international-mobility",
+      "name": "挪威 FRIPRO International Mobility",
+      "url": "https://www.forskningsradet.no/en/call-for-proposals/2025/researcher-project-international-mobility-fripro/",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "nnf-uppsala",
+      "name": "Novo Nordisk Foundation 乌普萨拉博后",
+      "url": "https://novonordiskfonden.dk/en/grant/postdoctoral-fellowships-at-uppsala-university-2026/",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "carlsberg-internationalisation",
+      "name": "Carlsberg Internationalisation Fellowships",
+      "url": "https://carlsbergfondet.dk/ansoeger/internationaliseringsstipendier/",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "cost-stsm",
+      "name": "COST Short-Term Scientific Missions 短期访问",
+      "url": "https://www.cost.eu/Annotated_Rules_for_COST_Actions_C",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    },
+    {
+      "id": "fulbright-visiting-scholar",
+      "name": "Fulbright Visiting Scholar 访问学者",
+      "url": "https://fulbrightscholars.org/non-us-scholars/fulbright-visiting-scholar-program",
+      "sourceRole": "逐日查看具体call、申请资格与下一轮安排；目前URL来源于既有已核验目录，只有verifiedInfrastructure列出的来源在本轮再次打开。"
+    }
+  ]
+}

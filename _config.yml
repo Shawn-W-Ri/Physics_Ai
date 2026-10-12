@@ -1,7 +1,7 @@
 title: "Even · Computational Science × Biosignals × AI"
 description: "Physics · Simulation · Biosignals · Scientific AI. 从方程到信号，从仿真到智能。"
-url: "https://shawn-w-ri.github.io"
-baseurl: "/Physics_Ai"
+url: "https://www.aiphysics.me"
+baseurl: ""
 markdown: kramdown
 kramdown:
   math_engine: mathjax
@@ -18,6 +18,8 @@ nav:
     url: /notes/
   - title: Labs
     url: /labs/
+  - title: 科研助手
+    url: /research-compass/
   - title: About
     url: /about/
 
@@ -30,3 +32,6 @@ exclude:
   - POST_TEMPLATE.md
   - REDESIGN_DEPLOY.md
   - BIOSIGNALS_UPDATE.md
+  - tools
+  - RESEARCH_COMPASS_INTEGRATION.md
+
