@@ -92,12 +92,35 @@ only when overriding that address, such as after a domain or path migration.
 Readback must match the current run's `update.revision`; a successful fetch of
 an older catalog does not prove that the new data was published.
 
-Keep the existing hosting integration and verify that its production deployment
-builds the generated data commit. The included Jekyll `_config.yml` preserves
-the site's navigation/exclusions, adds the Research Compass entry and excludes
-development files. It uses the custom domain with an empty `baseurl`. Merge later
-configuration updates with the current repository instead of replacing unrelated
-site settings. See `RESEARCH_COMPASS_INTEGRATION.md` for deployment checks.
+The first website deployment must include the exact external rewrite in
+`vercel.json`:
+
+```text
+/research-compass/catalog.json
+→ https://raw.githubusercontent.com/Shawn-W-Ri/Physics_Ai/main/research-compass/catalog.json
+```
+
+This route sets `x-vercel-enable-rewrite-caching: 0` and
+`Cache-Control: no-store`. Jekyll excludes `research-compass/catalog.json` from
+its output so a built static file does not take precedence over the rewrite.
+Once that deployment is active, daily Actions commits update the catalog served
+through this route without requiring a new Vercel build. GitHub raw-file
+propagation may still take time, so verification polls the original public URL
+and requires the current revision. The workflow uses GitHub's automatic token;
+no user-supplied personal or Vercel token is required for this data path.
+
+Changes to application code, styling, pages or hosting configuration still
+require a new website deployment. Check the Vercel project's actual Git link
+before relying on automatic code deployments: it must point to
+`Shawn-W-Ri/Physics_Ai`. A working domain or catalog rewrite does not confirm
+that a stale link to another repository has been repaired.
+
+The included Jekyll `_config.yml` preserves the site's navigation/exclusions,
+adds the Research Compass entry and excludes development files and the catalog.
+It uses the custom domain with an empty `baseurl`. Merge later configuration
+updates with the current repository instead of replacing unrelated site
+settings. See `RESEARCH_COMPASS_INTEGRATION.md` for deployment checks. These
+configuration instructions do not establish that publication has completed.
 
 ## Validation
 
