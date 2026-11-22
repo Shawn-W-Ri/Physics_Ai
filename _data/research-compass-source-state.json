@@ -1,58 +1,58 @@
 {
   "sources": {
     "https://www.oulu.fi/en/research-groups/biophotonics": {
-      "contentHash": "c56292ce1e795f2be1e0f416a6cbaa95e86a8da53071493a4396764612c3a0b6",
+      "contentHash": "f8ef44b21f8edd9c626d62bb5c0449acda398a27edc6c45c9098c5b7867dd962",
       "semanticHash": "d05efcbb016cc8fb5b77e2459835a1c6a22a8f0e5de167d67bd1e7e2510b1c31",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"1795240470\"",
-      "lastModified": "Sat, 21 Nov 2026 05:54:30 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795325275\"",
+      "lastModified": "Sun, 22 Nov 2026 05:27:55 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.oulu.fi/en/research-groups/myllyla-group": {
-      "contentHash": "9f9f2cadbbfae14dd2c46d8c2101ebe25a051f46024e9a8d200b675687758e8c",
+      "contentHash": "5bf3e3215f1d2a51a4db2d1a77382e072dbdb60c7f7bc1ec16fb98c032fbd80c",
       "semanticHash": "68c996ea5f023e379e7f66db480c2b62dd87fac2931de66ed98a1526052e51ed",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"1795240474\"",
-      "lastModified": "Sat, 21 Nov 2026 05:54:34 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795325278\"",
+      "lastModified": "Sun, 22 Nov 2026 05:27:58 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://sites.uef.fi/inverse/research-areas/optical-imaging/": {
       "contentHash": "d45017ae49d2315e1421646ceb25d26ae7889dd9d3daceb99da0c7251ea4bad4",
       "semanticHash": "3518f4412a6893399f3020626504ee25127e78e9453969681d74756b22226bd2",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.oulu.fi/en/researchers/andreas-hauptmann": {
-      "contentHash": "d98b43feaef1cbc56bc4768100df74c8680d960e3ce1907ebb6f3007f5e2844f",
+      "contentHash": "8c92649a9b28896b99147b5ac5e65c2623a709f3798a009844c2df2957d804af",
       "semanticHash": "c026c1b6208c0b488ddc49f17942fc7022ad6890fd907228c50293a4420d86f4",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"1795240477\"",
-      "lastModified": "Sat, 21 Nov 2026 05:54:37 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795325281\"",
+      "lastModified": "Sun, 22 Nov 2026 05:28:01 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://research.tuni.fi/stb/contact/": {
-      "contentHash": "5d402d520b6996c4d58427c6d41c8d465658fef1f5f677defdad74e55a2e1c51",
+      "contentHash": "c46d385cdce6c26760009a9edea4fe27543d8ba56f1095c9af8ee55f7bb085d6",
       "semanticHash": "7b15b000fbd60b2b0c9f914cdc75683d0e9968248ce82021b4c7fff7389bc687",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://research.utu.fi/converis/portal/detail/Person/790094?lang=en_US": {
@@ -63,275 +63,276 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "The read operation timed out"
     },
     "https://users.aalto.fi/~ssarkka/": {
       "contentHash": "b618dc5a56290f401e98dc1f62e5d1af4de8f9f5cbddfe3ea40db8063efe0d1a",
       "semanticHash": "cb0d03772a0fdd98f4fd79c3ddc4e372b02e3f9f7fa592a6f90a722c40918e18",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"20fef-660661f573d39\"",
       "lastModified": "Mon, 16 Nov 2026 15:06:29 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.aalto.fi/en/department-of-neuroscience-and-biomedical-engineering/medical-ultrasonics-laboratory-medusa": {
-      "contentHash": "af6bacc455898392f0bc574730319905f1b01497a4525d25d5d8833af940752c",
+      "contentHash": "c1257979aaa79ad2ecc982550fc02553ccb721a74673cf0d9109638e4dfaf517",
       "semanticHash": "79648e1ca5af9d76b24ade64315e5cc592908c26aec9b8ed95bedf2678732a7c",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"1795240474\"",
-      "lastModified": "Sat, 21 Nov 2026 05:54:34 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795325281\"",
+      "lastModified": "Sun, 22 Nov 2026 05:28:01 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://researchportal.helsinki.fi/en/persons/ari-salmi/": {
       "contentHash": "5a94f1615d4686ffddb956680b2670782242a503ccb029fec4306ed76ff89710",
       "semanticHash": "cd23bec486b78fe0b018506f249d4062e5e6e25892436e624b4edd2165848491",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "Thu, 19 Nov 2026 09:30:02 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.helsinki.fi/en/researchgroups/inverse-problems/research": {
       "contentHash": "bdcb4c07c77f06632b07852a7ef15472cdc0d48ed6076c043259d7c749ec4c44",
       "semanticHash": "cb95180c62e03cd2044ab731560b01e76f1c1e3f1534769def0028ffa573cc15",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"1795240476\"",
-      "lastModified": "Sat, 21 Nov 2026 05:54:36 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795325283\"",
+      "lastModified": "Sun, 22 Nov 2026 05:28:03 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://uefconnect.uef.fi/en/sleep-technology-and-analytics-research-star-group/": {
-      "contentHash": "bca5f1313121e1977b6e931d1fa0d1f0264a67b0460ecde76a928a45a2aaba9a",
+      "contentHash": "58c5787db1ad3e54061faed51ebd5176bdd2d37c0d7bd78cc418124ab5e3314c",
       "semanticHash": "4fc99f7f252836de3d4eb974fadce7c2bcbc7bc8cce3366a19d3e62e7ef213fb",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://portal.research.lu.se/en/publications/analysis-of-the-vascular-sounds-of-the-arteriovenous-fistula/": {
-      "contentHash": "99f27fdebdd98cb3d966ad5492e2c5e1d5549620f5ac8595f2cdcd2adadd2b73",
+      "contentHash": "9d63d7fe7274e11d0015a70de41d98371190579c65d90a4aa176d764adbf7f1a",
       "semanticHash": "17d4fb10c0e9adeb6f011011c2bab7059a267aa719c386dd026b15eedb887e1d",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
-      "lastModified": "Fri, 20 Nov 2026 00:00:00 GMT",
+      "lastModified": "Sat, 21 Nov 2026 00:00:00 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://ki.se/en/people/david-marlevi": {
-      "contentHash": "e6bb708906281ac0c8c190657947b46b6f97d91426e7de5f0f1eb1712efa2c10",
+      "contentHash": "abdb2e7c0722e1c0f88da315d39e2f4bcb6b5a8a7e7b8307f7bfdadc37dc37a7",
       "semanticHash": "7854dfbc13862c00272a893b6ae4c4743e7f61fb484299f8613f9c68d8e292de",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "\"1795199897\"",
-      "lastModified": "Fri, 20 Nov 2026 18:38:17 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "\"1795325285\"",
+      "lastModified": "Sun, 22 Nov 2026 05:28:05 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.kth.se/profile/matil/?l=en": {
-      "contentHash": "10c84da9b72aafde3de9b1a0f76024374b35e73765fa844c891f08118c8cbadd",
+      "contentHash": "c10b6162d627374de801b6d68e5611b6f6681a81614a74c743fb9e32e84b8e2f",
       "semanticHash": "e9c4014556738d0d362908e861e2f205981e5ac01fa66a16ad2ede69ed5e6681",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"a64a-4Q+vQbDOyjzF/q21EHohVcgWly4\"",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"a64a-QhVkw8Hyeh1NdGR6JgWQtzH4z4Y\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://app.kth.se/profile/seraina": {
-      "contentHash": "9a3e1c2672bca8d42b3882e4bec741a42246b8279d456480fb5ae13dcdfcdca9",
+      "contentHash": "0f2779a91b21c4e90c3e3707f948032905c28024a2eb1be3eff6252b06e970ed",
       "semanticHash": "21e311ecf1912b1048212617a97464045ff52b4a03ccb97e3aac0b7fabba3c6a",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"da64-xGp2gfzxe8TPFnWPC4idjD2pNuU\"",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"da64-ctiOlq7lye/JElmBon9z2XdZJOY\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://liu.se/medarbetare/tomst50": {
-      "contentHash": "02a53092dc81b8f5ca200aaea59b067cb763ddb0edb651ec6c8b40bec16de7a0",
+      "contentHash": "8bdde7a3246ca0c36f01e96713fbf4b6a96c5c7854821d0f8ed11ac30e510968",
       "semanticHash": "bc9848432ac5278542e87fc685c218ac17cb0463b9d2bf0527a79d3c1cca3bba",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://liu.se/en/research/heart4flow": {
-      "contentHash": "d980bd5c304e452e6a65ec732ebfb2270555cc46e3f8a0130806bd39ae024ff1",
+      "contentHash": "5dec59cea8b1704ff44653e5c0c52d726946e31eeeb6c351eb532bc44de17314",
       "semanticHash": "397d828c324c135df9b7f3891c0aa01b10c6c12305f8779d8e324dd8bb302e2e",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://ki.se/en/fyfa/research/division-for-anesthesiology-and-intensive-care": {
-      "contentHash": "f131e2944ba7f78a3a3ec8aebea1e397b4bc7fabbe57bbd9b9f71ecb037704dd",
+      "contentHash": "d254d2b88a659f7eb4e10120aeca6f91d970c7628a8ab0a22d1a7e835416cff2",
       "semanticHash": "787b4bedf17af9b005b82739becfa8cfa00d7df6163e08ab8eeb3ca49c3cde91",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "\"1795228765\"",
-      "lastModified": "Sat, 21 Nov 2026 02:39:25 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "\"1795250530\"",
+      "lastModified": "Sat, 21 Nov 2026 08:42:10 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.kth.se/profile/ozan?l=en": {
-      "contentHash": "677e09fee47ad1235c544614fb8137d2639e14b191ac1234067f3680de8c1d79",
+      "contentHash": "05773771da00eb1c494e7980135269edd22ceab67401d63be7b97951ffadfd04",
       "semanticHash": "baa7a98b467e6c9aa1e175bd3366c97e135f664932631e4dc489c53639ec1b21",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"a122-dPeDqSl+/vcY0OYbDPBxuz5Yxn8\"",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"a122-A/SrVGnfZdFoAY5qeTvjNB/cn0w\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.simula.no/people/kvs": {
       "contentHash": "26155b39aa0af25ef48cb465dab36d4e8aa9e4958f91beedd2434dd7eedafbd0",
       "semanticHash": "68fe66335d881f7c4b84dc58cb2a6a727019f857e98889be6ecbca87d40f179f",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"5v7h050m6g3mr6\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.ntnu.edu/isb/ultrasound": {
-      "contentHash": "5fdef474c05f6a07b2d0220ad201079280e0aea48707856e02dbfcd1f21537da",
+      "contentHash": "f6ebe29f9c8d534f83d32f8393238ba82793e380aa1f76894876299c15db19f1",
       "semanticHash": "aa0b978e21cf910c6e98ac4243b6e384b8eaf68f9a7f6ba63544ba1b90d5e595",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.ntnu.edu/employees/lisel": {
-      "contentHash": "a365699fb0f7dba3ef8afd089d1071661a2f48b650c07c406d975d89026f82e1",
-      "semanticHash": "7267680696c534f892f97577614c79afca3d594e683bc6b65c2ed1ea9b46f6e8",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "contentHash": "1303007b75156b7d2c0efa6ee6f45b0c591b4ef3c97528e2913a0785ee533eed",
+      "semanticHash": "bf9b8e05913b49117673d9cad656d07b7aa27ec790cde68afd6cb568a14dc813",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.visual-intelligence.no/people/andreas-austeng": {
       "contentHash": "d201a078236cd7ce25a9200cb7fa73b0c07d617f72b8a99b63549d30a69cc51e",
       "semanticHash": "13afef5600d22b76d1796fddb4af4cf850c821744bf4668af21f482c0e66db9a",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "Thu, 19 Nov 2026 06:15:37 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://vbn.aau.dk/da/persons/sschmidt/": {
-      "contentHash": "dfadda1c452b051f7d6c11e9fead4f39f4ed841df03d76d01c4a4c8e41b47d32",
+      "contentHash": "ca294376bcbc25388ccf8c98758c7bf2933a6efc8736cd30727e72ae0b9a717d",
       "semanticHash": "4476ad503b95b8dfc0c70a54befd3ffc1e7898d16b9821eca475be4935843d88",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
-      "lastModified": "Fri, 20 Nov 2026 22:47:06 GMT",
+      "lastModified": "Sat, 21 Nov 2026 22:47:07 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.healthtech.dtu.dk/Research/Research-Sections/Section-UltraSound-and-Biomechanics-USB": {
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "Robots policy unavailable: HTTP 406",
-      "consecutiveFailures": 43
+      "consecutiveFailures": 44
     },
     "https://www.healthtech.dtu.dk/research/research-sections/section-optical-sensing-and-imaging-systems-oasis/group-biophotonic-imaging": {
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "Robots policy unavailable: HTTP 406",
-      "consecutiveFailures": 43
+      "consecutiveFailures": 44
     },
     "https://mpe.au.dk/en/about-the-department/sections/fluids-and-energy/research-groups/cardiovascular-engineering-and-bio-fluids-applications": {
       "contentHash": "45f8533c94603f33c99e516f84ad205fd0d99ebefbe4899446a94ab864c24041",
       "semanticHash": "edd862e7030664ce93c8f724ed1ddad4426a57918092f4f23238b246cebb9a1a",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://svefnsetrid.ru.is/en/": {
-      "contentHash": "91554e6df50b8d0404f349e827fbbabbf499b3d7e987f5d53dc21258b08ff20f",
+      "contentHash": "6970ac961392c5140d4d8deecfbe6f89ce5510a1215cd9ac3e08f23573ee0db9",
       "semanticHash": "bf6fbe2f78c410d00930cb7cac9862f301b0dfa890e6393712443695f29ca153",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.aalto.fi/en/aalto-university-science-institute-asci": {
-      "contentHash": "3bb755e10ffe792d23d44a08a668077b63e26a7647209a29497c4ead916eb2b7",
+      "contentHash": "9e431dc3f2ff23eafb26b5b2b4d1d7f9aa0f80c10d929a7f907c2359ba5a34e9",
       "semanticHash": "4b2334dfb12ddda681a7f88c7acb5c570ea64e4ad520d58881107a19d7887daa",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"1795240189\"",
-      "lastModified": "Sat, 21 Nov 2026 05:49:49 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795324561\"",
+      "lastModified": "Sun, 22 Nov 2026 05:16:01 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.simonsfoundation.org/flatiron/careers/?tab=job-openings": {
-      "contentHash": "f7b54517a58a4fac852d8e5ad8cf231e70a86d46d5ccb3809437caff61925811",
+      "contentHash": "2ca228a98dc204de2013159f3bec205a743d5f115f4302078da893f287f536bd",
       "semanticHash": "4ce5d3b81fcbed1748f7fa6f070b6a7ad597406015e39cefafb6a121b2eb10f0",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://apply.interfolio.com/193799": {
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "Robots policy unavailable: HTTP 403",
-      "consecutiveFailures": 43
+      "consecutiveFailures": 44
     },
     "https://usc.wd5.myworkdayjobs.com/en-US/ExternalUSCCareers/job/Postdoctoral-Scholar---Research-Associate_REQ20178764": {
       "contentHash": "594278a2ee1978ccc6e27edf6b0d24b92154077acc0b4730cfe08eed6f1831fc",
       "semanticHash": "a8361eeebd98034e0f22cccb67af756e1e966b025899cc07ae3f3e5e0c44fa9f",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.aalto.fi/en/open-positions/postdoctoral-researcher-in-speech-and-language-technology": {
@@ -342,259 +343,259 @@
       "lastModified": "Sat, 31 Oct 2026 00:22:36 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
-      "consecutiveFailures": 21,
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 22,
       "lastError": "HTTP 403"
     },
     "https://www.simula.no/careers/job-openings/postdoctoral-fellowship-available-in-scientific-computing-at-simula-research-laboratory": {
       "contentHash": "1a8c5ce54679ebf904dc67da3242bb0e21fcb5d68be9eed58b41403770a0e2df",
       "semanticHash": "4d5cff23cd81c39476f4fe0bede8d5c9ab84c3e50700eac9b430a4071fe2443f",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"1gzmaahdfs3c1d\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://euraxess.ec.europa.eu/jobs/search": {
-      "contentHash": "1a575914282b1da99b7600a148f348a56da3720e6b2d402bf3125ce3d6dbe2cc",
-      "semanticHash": "4dc6d589f8fe744dd10fc3496d9022a35fb0240afa80a62435bb6bba133ffe69",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"1795237367-gzip\"",
-      "lastModified": "Sat, 21 Nov 2026 05:02:47 GMT",
+      "contentHash": "62992b21dc422b76fec6ddaab934524ab9e0e5ddc147cca8cabc1c02d7c81a04",
+      "semanticHash": "293916a2c8d3482b8aa98869aaefcf62225c43ed908132e92aa9442a220fba2f",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795322971-gzip\"",
+      "lastModified": "Sun, 22 Nov 2026 04:49:31 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.oulu.fi/en/university/careers": {
-      "contentHash": "dfc5835eb5950f8e1b60eaee2bc136f43314fa6cfc1a78cab3be3e69e30ee642",
+      "contentHash": "ebfc63d7e0d052e224e4b2a27ff03f83e07c6c50d87040ce940b308348a50cfd",
       "semanticHash": "d4c01d0b016c4b6175994d437fa8f0c5a4e91b26239291744e12e752bf576ec3",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"1795240485\"",
-      "lastModified": "Sat, 21 Nov 2026 05:54:45 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795325293\"",
+      "lastModified": "Sun, 22 Nov 2026 05:28:13 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://ki.se/en/about-ki/jobs-at-ki/available-positions-at-ki": {
-      "contentHash": "113a4ce5dae57649fb7a622ce9535e1d24a83caa47cd69f26e15c8b9f4a0d4fe",
-      "semanticHash": "f64503c303c956d7cd0b169447b2b401dca0b0f4efc8c3add67cd3ae198f718c",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "\"1795230934\"",
-      "lastModified": "Sat, 21 Nov 2026 03:15:34 GMT",
+      "contentHash": "83078e6aa9fcc907dc35a7e172b53eb8e334d078dad057bc31e565e667b08fa6",
+      "semanticHash": "d08a9c309a0220d54f5b4866c28142fe75ba436505f6569c8e661ef7874888d7",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "\"1795316515\"",
+      "lastModified": "Sun, 22 Nov 2026 03:01:55 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.kth.se/lediga-jobb?l=en": {
-      "contentHash": "43fa5b29824a100b0a0627e043294727c4266c8febf1a70d6307aed002a294d8",
+      "contentHash": "c2b184ddcfa422273abb026a48ba750547fa2a369a712bd8339d2c877149354b",
       "semanticHash": "73c3305c7c82ee70ea06974e634f938c56e898b6ec941a8aec742567220c7fba",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"261f9-8VIHMaIxiWz2v40Atxg+oWm5A5I\"",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"261f9-fqrtFRc04tEdi0r4bwP0Hb/W8lw\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.dtu.dk/english/about/job-and-career/guests-and-visiting-researchers": {
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "Robots policy unavailable: HTTP 406",
-      "consecutiveFailures": 43
+      "consecutiveFailures": 44
     },
     "https://www.tuni.fi/en/tau/work-with-us/open-positions": {
       "contentHash": "5881956ef82ee71665f0fcc6d352bf12aa80ee8a4d520909c2c83b0c996093c4",
       "semanticHash": "e23fa81063edd481310133078a32548f1d2128fc1613e3114fd5bee144ac3e38",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"5slyesbdcw3wte\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.ntnu.edu/vacancies": {
-      "contentHash": "5edc6e91d94a764b7b0c3e588a2861c005b92bc0f1e958ac989cfcaa7e7ef449",
+      "contentHash": "d06644ae5e11610dfa49beac96f06e2d771bc10b5914092e0bc2be2f829aa303",
       "semanticHash": "e73e2afc4d3646da56fecae6e01666fe3dfedd3f5c01c3ee048b32f9c6294232",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://marie-sklodowska-curie-actions.ec.europa.eu/funding/msca-postdoctoral-fellowships-2027": {
-      "contentHash": "18ae8290d8db442265c3c4bbfa176396250231add33a4755094c385b39d4f850",
+      "contentHash": "f639c6dd8c08185862b368622ea6565aa72cb7bde25129f0cea4fee741b9e204",
       "semanticHash": "4fa4f11f7228f9774fb7372a774d4919e3e828f23ae4a522d64158aacf52d017",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"1795219333-gzip\"",
-      "lastModified": "Sat, 21 Nov 2026 00:02:13 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795314230-gzip\"",
+      "lastModified": "Sun, 22 Nov 2026 02:23:50 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship": {
       "contentHash": "41d20f4c2a5aae4785c515e5cb025889f380b704c9d3412abb4222c2cfc2769d",
       "semanticHash": "b17194b9970572767498d014fd9396615243e9a53e139c41a780c533061b96a3",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.jsps.go.jp/english/e-fellow/e-ippan/appliguidelines.html": {
       "contentHash": "a410019c26160f14f08f86f91a2b2a9f4ae8e7a5f68c2006dfe5320f591309b8",
       "semanticHash": "e4c3b3c27cb7ac6f9c7f199741af6591c21a2cfe273e57a572f59d33a50e30ab",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://royalsociety.org/grants/newton-international/": {
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "Robots policy unavailable: HTTP 406",
-      "consecutiveFailures": 43
+      "consecutiveFailures": 44
     },
     "https://grantsoffice.ethz.ch/funding-opportunities/internal/eth-fellowships.html": {
       "contentHash": "8f17c5a68a024594b442b534eaa757431ccb3de15026c95f5f44cf4f2dd5b3c4",
       "semanticHash": "a99788cee875608e889e1ef7dfb100c7cc28238d9025e1754f984c41b94c8f25",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://brancoweissfellowship.org/who-should-apply/timelines/": {
-      "contentHash": "eeafdc4346c8507283a051dc7267f77e3be0831249097e9d37193013762f7c38",
+      "contentHash": "ad97231ee82fe56e279dc28e2c4cebbf232fd570de23c4e586d538430473a2d1",
       "semanticHash": "1f96c6ffe5ddae3d90c24020dce6eb66f88d12b82cccffed7abcbe49425380cc",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
-      "lastModified": "Fri, 20 Nov 2026 23:02:41 GMT",
+      "lastModified": "Sun, 22 Nov 2026 01:43:33 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/research-funding/schemes/wellcome-early-career-awards": {
       "contentHash": "103d1dd477f3f2068193e9f3d018c97d2a55f5c17351d0cfcb2f9f9f78f82a1e",
       "semanticHash": "34662c3aef00ed616d3ed7559d84f0cac82ad5a022320d4d0321fadc0be60112",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"15hk9uvyztcchqf\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://professional.heart.org/en/research-programs/aha-funding-opportunities/postdoctoral-fellowship": {
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "HTTP 403",
-      "consecutiveFailures": 43
+      "consecutiveFailures": 44
     },
     "https://www.hfsp.org/funding/hfsp-funding/postdoctoral-fellowships": {
       "contentHash": "4e8ce9dfb54dfe95128beafb6cd4b5c230419bc712a62da1aa01b3575ee596e0",
       "semanticHash": "d2963fec33c44dcf54b86adaa38d620b886fa41c7b3d21c785609f74e65e0312",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"1795189618\"",
       "lastModified": "Fri, 20 Nov 2026 15:46:58 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.embo.org/funding/fellowships-grants-and-career-support/postdoctoral-fellowships/": {
-      "contentHash": "6c1c3f2ebd8a77a3b5a9c37882507d1e6975f66e47cb11d1b192b150534282ba",
+      "contentHash": "8b5b7872321a4932d7d2ae94148e1f8b22b1b58b7c4969fd08ad150243e91d95",
       "semanticHash": "c7faf8c1ac19183cc6b939caccaae1d1d2006cbd3442b6cbbdee9208e075108b",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://schmidtsciencefellows.org/selection/who-can-apply/": {
-      "contentHash": "fd405419eb34ee782bee4a91964dc8c94e08e8b86449cd3b821be81506ea3bd4",
-      "semanticHash": "dff4931b934da56353ba6ce83db58aa9d804f8e010922b6b7b7be2dd152ddcae",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "contentHash": "27c69a91be897ed337a121bb0564e3f8fedf8e97d7af3fe4ee6668ad659e914d",
+      "semanticHash": "70b2a17928b478101297c24cdcd6368d74640477f1086ba1baffc5f2c474bcbf",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2025/researcher-project-international-mobility-fripro/": {
-      "contentHash": "1f2fec925a6482ce17d160be68b21c5856141aa317bad206d498577e5cf2b993",
-      "semanticHash": "bff7e18ba038cca14aee26c70ab87be53fe472a07b7d28acbdfd6c9e8cb080a5",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "contentHash": "6631e7b56f9506e8e42abbb30f8c3f16c5ee3d987f67cac47c34ed44d2503eac",
+      "semanticHash": "76ed8e4a28dd71429c23d18ba0e9ca357a8bad2d0d93842f690b7ca9a23b9613",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://novonordiskfonden.dk/en/grant/postdoctoral-fellowships-at-uppsala-university-2026/": {
-      "contentHash": "4bdb01f4c1035d4e32fe13064f1db11b53bb7f0800907994a7ef6019bf4d738c",
+      "contentHash": "76ec3341428066e42771a365de5d72dc425bec0139bb6b9730146c22fedd6979",
       "semanticHash": "226bec7af16a5b3605e5672c92acc59d73f4408b47f4556c028342f0c0d6e9af",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://carlsbergfondet.dk/ansoeger/internationaliseringsstipendier/": {
-      "contentHash": "23ea19ef65fa122e823db017c148db3ae26817eb1160ff4e450c408f682c8638",
+      "contentHash": "b4f9ee2539cac6c9153e8e2f163b52e518ec14e51c77d96e593f34f4b8675025",
       "semanticHash": "6f51cce95a3b680f9a4f15b4b8bc3f691186459bf990617bedafde638c5d3532",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.cost.eu/Annotated_Rules_for_COST_Actions_C": {
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "Unsupported response content type",
-      "consecutiveFailures": 43
+      "consecutiveFailures": 44
     },
     "https://fulbrightscholars.org/non-us-scholars/fulbright-visiting-scholar-program": {
-      "contentHash": "db760fc580adfe939a2f35d75e5d63ee30ca9a1295c64ccef212c173343b8e16",
+      "contentHash": "1c5b573cda55e0861a33393e6eb679e482868c1d452b006f610f5c485bf85318",
       "semanticHash": "5fb4b00e54969df0b9db7687fe1f054c88526b68d357434ff78d5cf89970903c",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://marie-sklodowska-curie-actions.ec.europa.eu/funding": {
-      "contentHash": "7620f21a52efc1eb2e2982bbf5ff14050ed5a8983da8f83f157575bde62b2f38",
+      "contentHash": "5efe682f2500f6ae8b7989c0e7740006d080d239284949900b4dc1dfaa756899",
       "semanticHash": "e3d7533697ab315bf53bfb4c19aa899e7e4d49d28646102ec697a44e9dc2ce99",
-      "lastFetchedAt": "2026-11-21T05:54:29Z",
-      "etag": "W/\"1795198849-gzip\"",
-      "lastModified": "Fri, 20 Nov 2026 18:20:49 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795310429-gzip\"",
+      "lastModified": "Sun, 22 Nov 2026 01:20:29 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-21T05:54:29Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22arteriovenous+fistula%22+OR+TITLE_ABS%3A%22vascular+stenosis%22+OR+TITLE_ABS%3A%22hemodynamics%22+OR+TITLE_ABS%3A%22haemodynamics%22+OR+TITLE_ABS%3A%22cardiovascular+modelling%22+OR+TITLE_ABS%3A%22fluid+structure+interaction%22%29+AND+FIRST_PDATE%3A%5B2026-07-15+TO+2026-10-13%5D+sort_date%3Ay&format=json&resultType=core&pageSize=30": {
@@ -1108,13 +1109,14 @@
       "lastModified": "Wed, 18 Nov 2026 21:49:24 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://www.humboldt-foundation.de/en/login?redirect_id=%2Fen%2Fmy-humboldt": {
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "lastError": "Source domain is not approved",
-      "consecutiveFailures": 14
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "lastError": "Run time budget exceeded before source request",
+      "consecutiveFailures": 15
     },
     "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/programmes-a-to-z": {
       "contentHash": "eb26f3e49522e9a64cfca6bc748cc9dceb4c826be0d2006fbc4910464333264a",
@@ -1124,8 +1126,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/hezekiah-wardwell-fellowship": {
       "contentHash": "b8339da642b25b0f4063919fb1641f93cf40544f59118d69a436ad5e2dc8c8f5",
@@ -1135,8 +1138,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/feodor-lynen-research-fellowship": {
       "contentHash": "fdd8e8c155bcefdd0cacd9ea91e6ded060378e73d197d9316ac2ebff82e21fd0",
@@ -1146,8 +1150,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/japan-society-for-the-promotion-of-science-jsps-research-fellowship": {
       "contentHash": "5c6f2a1996510b022ecb6c8b93ebff66f0109dcb16765bfaa377d69ad4b415ac",
@@ -1157,8 +1162,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/national-science-and-technology-council-nstc-research-fellowship": {
       "contentHash": "6dec8eb2dd2ba2dacc26325bbc58c49777a34845f7c112bf5304139a06c3aa0e",
@@ -1168,8 +1174,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/international-climate-protection-fellowship": {
       "contentHash": "288bd85bb1445a4c1fa411ada1d302bd41b0cfa1d4a68512db5066356baa23e1",
@@ -1179,8 +1186,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/georg-forster-research-fellowship": {
       "contentHash": "3d5c324cd7bcf837f80bbd19e521632a9e8dcd8b6173bf58619dabaf969247a5",
@@ -1190,8 +1198,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://wellcome.org/research-funding/guidance/prepare-to-apply/how-to-decide-between-applying-Wellcome-Career-Development-Award-Wellcome-Discovery-Award": {
       "contentHash": "849b5b42c6c7c6553fcfe2b711e7d5100b348b9a041a5f56bfb40ba2cf0c499a",
@@ -1201,8 +1210,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://wellcome.org/research-funding/guidance/prepare-to-apply/international-sanctions-how-they-affect-grants": {
       "contentHash": "3f0c2c387557789908e35a405507721fd2252d49d545fb1ed4b6648826953514",
@@ -1212,8 +1222,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://wellcome.org/grant-funding/schemes": {
       "contentHash": "5e0a7ac09fae494612aa066069c7e472e409be768be1c1cd9aff8cd30bcc288d",
@@ -1223,8 +1234,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://wellcome.org/research-funding/guidance/managing-grant/grant-end-dates": {
       "contentHash": "40a91f9ac78f7339997c0f71e3c9010e96e13cdb60078fded4debde5b0c4b372",
@@ -1234,8 +1246,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://wellcome.org/research-funding/guidance/how-wellcome-makes-funding-decisions/privacy-and-confidentiality-wellcome-grants": {
       "contentHash": "2716f511a2d5ef321a5eb2c9ddb34224e5fc826eba33e27b523342b2cd8eb67c",
@@ -1245,8 +1258,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://wellcome.org/research-funding/guidance/managing-grant/people-working-wellcome-grant": {
       "contentHash": "48964c24a3bb4e539cd9901907b7f085e1ab30ea3b8210972198b697c2245697",
@@ -1256,8 +1270,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://www.embo.org/press-releases/european-funders-and-organizations-partner-to-promote-sustainable-research/": {
       "contentHash": "f32925686f6b7f6ab8dd0aa6281564044cde89493ed30139aa1ad23b237041bc",
@@ -1267,8 +1282,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://wellcome.org/grant-funding/guidance/organisations-in-receipt-open-access-funding": {
       "contentHash": "f5631ffb4e7ae122c751aff869aa60926fa87df191e69ec1885a9cd507ae39ed",
@@ -1278,8 +1294,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://wellcome.org/research-funding/guidance/managing-grant/costs-grantholders-can-claim": {
       "contentHash": "a314a36714687314d2811742e34fb8f224d7d9b8c8618287d04af849243c7469",
@@ -1289,8 +1306,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://wellcome.org/research-funding/guidance/managing-grant/how-report-grant-progress": {
       "contentHash": "c75363bae756554e40a9fc71f597abaa5845f1ea968b28cfe31afc45ff6edf5c",
@@ -1300,8 +1318,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://wellcome.org/research-funding/guidance/managing-grant/how-to-transfer-grant": {
       "contentHash": "73ef69e1566bf560a51be8861363fad43730e4fc67c321b931ba3f25e3896b74",
@@ -1311,8 +1330,9 @@
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-19T06:15:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://wellcome.org/grant-funding/guidance/prepare-to-apply/discretionary-awards": {
       "contentHash": "a44f1221c4a91dd29bc262726b1090560b955fb016f6e4da73dd8de5949be4a4",
@@ -1633,130 +1653,123 @@
     "https://wellcome.org/grant-funding/guidance/grant-conditions": {
       "contentHash": "44fb8cc859e9f2a5268853c0631a4b6a97407bbc24897f76eaa617e42d6ea7d2",
       "semanticHash": "dc10a5b16a32f98bf52cfb44f6588bccdfa7bb49b64b3dc8f5b5ece5ebc97ff7",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"15yifjpvx1n2vwg\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/schemes/multi-user-equipment-grants": {
       "contentHash": "64f2aee582aebef70d8f70b54879389ed55bc2cfa50fed4f33cb6bb9c36d0309",
       "semanticHash": "6f2c4139a18cc6763fcd0f1919e118dbf7a2b585b2d1a2f922c4659053a3c4a3",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"ddw6vtrr72415u\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/schemes/sir-henry-dale-fellowships": {
       "contentHash": "1fd4455deeba563a2cab98b7646794a23f2d9c038828439d6b235f4f7f79c30c",
       "semanticHash": "f4896d64f9d69230a50c21f2cdeed5588ea2cfa2ead471aa417a979425bf96c6",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"1098v8wegbl6h4n\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/about-us/contact-us/funding-enquiry-enhanced": {
       "contentHash": "81c6a3be8c6d70208ffca2146ffa5912c0857f79a33071c98165637109d6a2e0",
       "semanticHash": "9df1236fedf02b16ffa450f61049160f0c29dd36aaddedc80dfe6e179a38c557",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"6fguzql8rc2g1m\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/funding/guidance/grant-conditions": {
-      "contentHash": "12ef9bfd014ea929c3a31e34f3f269e0a7c52f3194690ed2614d3e84c793c05d",
+      "contentHash": "44fb8cc859e9f2a5268853c0631a4b6a97407bbc24897f76eaa617e42d6ea7d2",
       "semanticHash": "dc10a5b16a32f98bf52cfb44f6588bccdfa7bb49b64b3dc8f5b5ece5ebc97ff7",
-      "lastFetchedAt": "2026-11-15T05:09:59Z",
-      "etag": "\"y0uy31xx2i2wbi\"",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "\"15yifjpvx1n2vwg\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 1,
-      "lastError": "Run time budget exceeded before source request"
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/guidance/grant-funding-policies": {
-      "contentHash": "35d0f6e5980b9de9f44dd867a5e82ef2fbbe80bc6f9b8757ae7c5bdcc43b326f",
+      "contentHash": "7d7be32526a44bbfd0426dbfd98a9d82ec75b3e334b97883786c8968c75587d7",
       "semanticHash": "17b36d84da4d48302c9e2a9291a627ea199e056946cc70d954678a4ee6dd439c",
-      "lastFetchedAt": "2026-11-15T05:09:59Z",
-      "etag": "\"b2zbwe2bcu3p8m\"",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "\"rmfvk4vtvs3ooq\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 1,
-      "lastError": "Run time budget exceeded before source request"
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 0
     },
     "https://wellcome.org/research-funding/guidance/prepare-to-apply/how-to-prepare-funding-interview": {
-      "contentHash": "0fb3d345ebf640b3aa8ce4c3f0b4f2543efa376341510767a9676ff45ed13fd3",
+      "contentHash": "ff6c410b01d99650a208e72c74062303ffd5f8340e07a2dff7babea2b3afb5a0",
       "semanticHash": "987c8a3e835b5eba92b003c9979b2bda67bbcbdd5beffb3355860592811d3f22",
-      "lastFetchedAt": "2026-11-12T06:01:36Z",
-      "etag": "\"m91gvkx3gb3rgs\"",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "\"b9d8ks8x2t3r3a\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 2,
-      "lastError": "Run time budget exceeded before source request"
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 0
     },
     "https://wellcome.org/research-funding/guidance/how-wellcome-makes-funding-decisions": {
-      "contentHash": "dce6e0d8e32a923cdb46948ee4cb5c60685836f45fdcb962acf86e19507b8ab3",
+      "contentHash": "e40cc5609e6b8b63e1493d187696965cf5547ab5db1cc5c0dc0fd856124d362d",
       "semanticHash": "2984bfeb0de8cacb5da535795247ec12dfb4d19ba07e3ed8d900528eaee6c3c1",
-      "lastFetchedAt": "2026-11-12T06:01:36Z",
-      "etag": "\"4txl2jzvse3008\"",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "\"z0dq8t3s1l2zks\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 2,
-      "lastError": "Run time budget exceeded before source request"
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 0
     },
     "https://wellcome.org/research-funding/guidance/managing-grant": {
-      "contentHash": "3d40c5b77725eef525e7d9e112292c306b1c6d652260a2b10c553b8beb231b45",
-      "semanticHash": "f18ae2298402af9e6dc36c0e324dbaf71d3fa07cded7591ba780351d3448d591",
-      "lastFetchedAt": "2026-11-12T06:01:36Z",
-      "etag": "\"sxzo0uix503o4d\"",
+      "contentHash": "43853aa30a44e3fca40f72dfcc727a1ecc698d95e3018c953ffe61bb8cd30e8a",
+      "semanticHash": "deccba56c40b44b0ea88e3fdcd6e2925c505b140bb7fd86e622837219a253b2d",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "\"a0ik118n7m3p4a\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 2,
-      "lastError": "Run time budget exceeded before source request"
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 0
     },
     "https://wellcome.org/research-funding/guidance/how-to-claim-funds-from-Wellcome": {
-      "contentHash": "474e6f1065a8e380a76cf3ac7fb63b55607ae8d27964ee9488a5ede811a4788a",
+      "contentHash": "600b2765b24c97373a3fd8960afbed36e3b10bfa62c85a0ac4072be0526c9a55",
       "semanticHash": "f40fcf500663c4254b65e53d396a5759f6bf6a9127fca2bf6c99567e58b04b48",
-      "lastFetchedAt": "2026-11-12T06:01:36Z",
-      "etag": "\"y6z5uyxqrh2wo4\"",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "\"ffgavqqczj2w8o\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 2,
-      "lastError": "Run time budget exceeded before source request"
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 0
     },
     "https://wellcome.org/research-funding/guidance/ending-a-grant": {
-      "contentHash": "a10b47453c2416ab87d38a6e47470829d412127102695e330fe6e2491b8af12e",
+      "contentHash": "e194cf8aa33ab0a4f68d0a759b4e6092e362996af2bd26e2df96f28b5c48ca9f",
       "semanticHash": "ca20bed7ce98acf906531d21c227cd39449dbc732b8704d9f03b6b3aff6ae9f0",
-      "lastFetchedAt": "2026-11-12T06:01:36Z",
-      "etag": "\"t10t67iu0g2y0j\"",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "\"13r2ozbamnn2xjb\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 2,
-      "lastError": "Run time budget exceeded before source request"
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 0
     },
     "https://wellcome.org/research-funding/guidance/policies-grant-conditions": {
       "contentHash": "b6bcee02e84fdd8ba686cfc36f73333f80a94ad6145bf547cbc4def72caa3fce",
@@ -1979,69 +1992,69 @@
       "consecutiveFailures": 0
     },
     "https://euraxess.ec.europa.eu/jobs/472214": {
-      "contentHash": "6530a8de455900978586a27e1bff76986991c6779fbf0228de18f4a162be586e",
+      "contentHash": "fe72eefeca2721fff9448a5c5223adc2adf0fd1bcd63e6cecd9ef2e3427f067a",
       "semanticHash": "786b9917cab4664a83225b89c7e7a4ea4fab523bbd611a1ce4f1d60470b5986c",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
-      "etag": "W/\"1794982507-gzip\"",
-      "lastModified": "Wed, 18 Nov 2026 06:15:07 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795325387-gzip\"",
+      "lastModified": "Sun, 22 Nov 2026 05:29:47 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/biomedical-resource-and-technology-development-grants-update": {
       "contentHash": "6a2e9ef16f997bd71d84c2c05f477284381b894c3da7d4326659422efe00b35e",
       "semanticHash": "c49a125c202149e709b8c5dd7bd7468ed6feec3141194740c1c010652a2d859f",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"1223air754o3e3i\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/schemes/longitudinal-population-study-grants": {
       "contentHash": "f84a23d27aa6fd596de853fd5f197c940f1423a93b505c3078247d8ab00bc578",
       "semanticHash": "4ee845a82f28a1ad57e746b3390e793fde73c74cf6b945aa15cad469ab3d93bb",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"hgelgrepe05ua9\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/guidance/research-enrichment-funding": {
       "contentHash": "53a0419f71ef85e32c16831504f6b1382c70bf221f9f3baafbb581a353b838a0",
       "semanticHash": "82d2b2135aa884f3f5ecb3e50917f342c4691d18716202988ab978e4c8e370a0",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"12pvh4w0pz946p9\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/funding/guidance/how-to-write-wellcome-grant-application": {
       "contentHash": "af574957cc8610e7c2543574f103fe11f4e921b1b5b75710d6614e736a841350",
       "semanticHash": "3af4c947feb26d21b0de62ae2cb1f179f14feb0e3770ca853dd5805a62155c24",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"18bcnnx3vs53pdv\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/funding/disabled-applicants": {
       "contentHash": "79c59ce7d396c4e9f5b766dbdcd7801e64baa6daab782f2271f0b8f98673bc43",
       "semanticHash": "3fe5765f70d59be42e543b02a126b23f47d35bd632fd40986c35bc8bc22fb604",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"156awnto3g93cik\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/guidance/coronavirus-covid-19-information-grant-applicants-and-grantholders": {
@@ -2292,91 +2305,91 @@
       "consecutiveFailures": 0
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2025/research-infrastructure-national-importance/": {
-      "contentHash": "07a6b8f2ce3c4099d51229c6b4edc6587d8ec3c3edd11f8a823be00e5ffd314e",
-      "semanticHash": "d6d75f5a4dfb8e6b2e34e59088569ca09bade39c61ba154a21d96789254dd433",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "contentHash": "948715b1f9a7af5d0a68cfe88bef3cee2c0fb4620a2a6c10072fa8dc43bd6bec",
+      "semanticHash": "1114944503e4d4c133fe5797d3ab3cf229a83de24f3b7a87a69f40c2c7263870",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2025/knowledge-building-project-industry/": {
-      "contentHash": "ac97b24b36c05d1b42c63fcb3b6330fc089fb3017b97e2d2c20cef7359a5ed8e",
-      "semanticHash": "853d5ce5057863d6e0a5ed6e8821711fe1d5fd8906c9cb0601c009f1aa44497d",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "contentHash": "9925956c3096493dde2864ad0ca01bed9cce70e65886f8c493f88bb23836f54c",
+      "semanticHash": "451e4636d08e028ef9f774071da0d4982f717dcd853d3777d5fe6b5d2851b6b5",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2025/researcher-project-local-elections/": {
-      "contentHash": "48e5744755f9520075716d21103f45fff0a224a4314b33579d2e15e3c805b4f3",
-      "semanticHash": "334e1233838f725194d0ece9814928ae7087baeebc982cb2f6f6ab78b217e779",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "contentHash": "ac270d2dc5925bea329359503097fd7932bacafecb1cfd2dc4c2aae25dafeeb0",
+      "semanticHash": "701c287074abc8579608d1c2962d136e7501e672d8699246298a50205254e23b",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2025/centre-sustainable-area-nature-use/": {
-      "contentHash": "7178f88cea7cda23205625eae2a4e45223e2e7b35f757b91f93b20dcf6c1e4ed",
-      "semanticHash": "a95518ce35182d4f9737ffcd94d4609fe243f1deb1e29492c6d97d2b81ff976a",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "contentHash": "8fcad57a88904c8c7d7982efcc5a38e3a632f1764ab38c4f3c32a1b27331b560",
+      "semanticHash": "77a3503d33ebdaa5a2c2f95a5e29870773bd9cf87bcb50ffd676520fc9345c8e",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2025/collaborative-project-prevent-combat-violence-close-relationships/": {
-      "contentHash": "71ef0bb4a8d94b50eb9b3d9ea9657aa8ba85df7a31c68488c91f3fe99959ad07",
-      "semanticHash": "f0f92ca96526d4962533417833d97d0957de05e72252c09cfb31faad01ccb00c",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "contentHash": "00a8c5b0002fdc90aebd15be6e4d9c5f65a049d3b20f98b594d52b361d412d78",
+      "semanticHash": "8c57f4dba1a3b1b5c00c04b1c44ddf49fd6c56fe7d0324449917bad8945f27a9",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2025/research-innovation-major-challenges-public-sector/": {
-      "contentHash": "2fea2636bf62d1ea16ccaee8032dca4d3624cd012c0861210f1efefce0c180af",
-      "semanticHash": "fe391df51c639c8ab96a1eaae0d9c304c5e6e8529baa83315ca69329de85124f",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "contentHash": "984071f546a8a7134ec1f2246674de550f6c66bb39358520fe910c7e6b976389",
+      "semanticHash": "860b2b136334c7a8b167e71f60b4571b0cea5ab5f7f7a9ca2af8bc647fd3ccb4",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2025/centre-quantum-technology-research/": {
-      "contentHash": "780d5c404ce4325c3368823f7d7a402b37d6c03a6584d802d581b5c8d58e6e24",
-      "semanticHash": "84aade4e53c4b8e420c2a1dfa98318d982538ce1d7bfe32eb46816d3675b4099",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "contentHash": "fbb7840ee6675d236526a5eb5bf16017516dfda64397c8481078fed744324339",
+      "semanticHash": "f970bacf58452c14ae4563af0e1a3f2f94091df9288d3d6a45da6f0b10e904bb",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2025/innovation-project-industrial-sector-energy-transportation/": {
-      "contentHash": "33831c61cc539709874b735ded9377d25e14fe8bc579318638ecd3a55605f004",
-      "semanticHash": "fd023e0f74bb0e4b3b17c1c084ce2652c6fc04cf2f7afee0a0ae0bf2614be88e",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "contentHash": "9eee7bd675c6095a357a336f249ca2bb5395a3c7157cd09c93b744b56d634077",
+      "semanticHash": "fe8a884f8493e3743a3c69149b42cd758fb12e77ffd6c10372e7f4f4e78ce5e1",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22arteriovenous+fistula%22+OR+TITLE_ABS%3A%22vascular+stenosis%22+OR+TITLE_ABS%3A%22hemodynamics%22+OR+TITLE_ABS%3A%22haemodynamics%22+OR+TITLE_ABS%3A%22cardiovascular+modelling%22+OR+TITLE_ABS%3A%22fluid+structure+interaction%22%29+AND+FIRST_PDATE%3A%5B2026-07-17+TO+2026-10-15%5D+sort_date%3Ay&format=json&resultType=core&pageSize=30": {
@@ -2413,14 +2426,14 @@
       "consecutiveFailures": 0
     },
     "https://euraxess.ec.europa.eu/jobs/472464": {
-      "contentHash": "897f6fb70e5363a59621e1f7e45cb2cf5f77211c340da1cbd9d99aa9047fbae9",
+      "contentHash": "9428e4ab858fc9b4964fafd9134e1cf8c75af4658f15923bc19d30a5247048a4",
       "semanticHash": "a86f558d36e929fe16cf1899ce7b43f56a43d347b5ef31b0c87d772897bdf0d7",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
-      "etag": "W/\"1794979200-gzip\"",
-      "lastModified": "Wed, 18 Nov 2026 05:20:00 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795325448-gzip\"",
+      "lastModified": "Sun, 22 Nov 2026 05:30:48 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://euraxess.ec.europa.eu/jobs/472453": {
@@ -2431,79 +2444,79 @@
       "lastModified": "Sat, 14 Nov 2026 05:00:28 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 1,
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 2,
       "lastError": "HTTP 429"
     },
     "https://wellcome.org/research-funding/schemes": {
       "contentHash": "5284e9871dc8c7dbc665a3c00d0f36bbdbdacfa934f18679458fbcf74bf136d3",
       "semanticHash": "5e3cf8745337b409f24409e7a924a62f0b1b9dda9ca7b83e17cee863f4a864e2",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"26xuwl75ma3cbt\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://login-funding.wellcome.org/s/login/": {
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "HTML has too little readable content (possibly JavaScript-only)",
-      "consecutiveFailures": 11
+      "consecutiveFailures": 12
     },
     "https://wellcome.org/research-funding/guidance": {
       "contentHash": "da83124acbadd7421d7e791189be392025f395cbd775c13042708a145990404b",
       "semanticHash": "3556c0fc4cb340593b5edebc3c2b8ab877db1289f32123c19f5038eea9e48a30",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"ja2q42zhio2vl6\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/research-funding/funding-portfolio/funded-grants": {
-      "contentHash": "de5338e7d7d95ec5944cedf7f3b76358f642b0db94900be5d94703fc350af20c",
-      "semanticHash": "06a6792d4fa93199e4c8a33269f763b6f543c9de181ad91e3d21e51475be34fa",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
-      "etag": "\"80l6ic0qdotr3s\"",
+      "contentHash": "a85af4313d408db00d74bd59acfe72f703ef95710bf633a36c5fff90dff03491",
+      "semanticHash": "5a90ced9a86c0449919b8556f79a4beabf618feb9eba30a70da813b1b0c5a1e3",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "\"xrye9h6mxju4ae\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/funding/scheme-finder": {
       "contentHash": "5284e9871dc8c7dbc665a3c00d0f36bbdbdacfa934f18679458fbcf74bf136d3",
       "semanticHash": "5e3cf8745337b409f24409e7a924a62f0b1b9dda9ca7b83e17cee863f4a864e2",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"26xuwl75ma3cbt\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/schemes/biomedical-vacation-scholarships": {
       "contentHash": "7e4793f352fd4517717e6939dc7d4a7ca02ee89e5adcfb7fe7a892a13a6526dc",
       "semanticHash": "e155f9bd1b463f087a9729acfff5d99727b9f51aa6d0cd4d90f100f0f8006385",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"7n6808ctm335db\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/schemes/engagement-fellowships": {
       "contentHash": "63983d0d8b4a04333a0e41cac491edf78b67b5cc128c211ed44c66224a0a90ca",
       "semanticHash": "37bd2435a3304649eede2ec27b9cc23ad56fd96ccef81e1cab5077b01d11b590",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"piu6w7bfwz39zi\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/schemes/international-masters-fellowships": {
@@ -2903,47 +2916,47 @@
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/people-and-projects/grants-awarded?f%5B0%5D=funding_scheme_grants_awarded%3A7948": {
-      "contentHash": "4f15f4c0bfd272c0cacb074655584e7542e0e393c40eb5131d168bbb7572c3f9",
-      "semanticHash": "0e40fdbf1a76b3d3a27b46a885d5a4c59124fdf2964ad82f71f722472421e1cb",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
-      "etag": "\"11d8j3r9w8lbzwt\"",
+      "contentHash": "c17f09bf4cb517cd4c244249efbc5790002b8b413b3392579fe0e61657cc4427",
+      "semanticHash": "d51e38f69a9fcd34999d6b51bf333ab85a712c8465e7de06bc3f9e697a3cfdda",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "\"5q7791q0vic7nj\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/schemes/international-training-fellowships": {
       "contentHash": "d84210bc6aab3aef1ec8084bfd61e8a4645304e2716fbb9875d34ff29f51e8e4",
       "semanticHash": "ff69a7b98f3fd5ef1b7c2bc3817a58bc1532d2d94cc2f12af2bb3d01d2638bb3",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"r16nzwy65z6bnu\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/schemes/international-intermediate-fellowships": {
       "contentHash": "fe8affc6da485dc1630f08ded1b8c72b365eada3255931488720e4f6b88d6e5b",
       "semanticHash": "d29bb7fcfb844167ecb9ca6826e419fba9d68d2a11ee9e297eb3d1b04bd6c672",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"9ojrpzbvlw69eg\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/what-we-do/our-work/how-write-wellcome-grant-application-schemes-closing-24-august-2021": {
       "contentHash": "af574957cc8610e7c2543574f103fe11f4e921b1b5b75710d6614e736a841350",
       "semanticHash": "3af4c947feb26d21b0de62ae2cb1f179f14feb0e3770ca853dd5805a62155c24",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "\"18bcnnx3vs53pdv\"",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://wellcome.org/grant-funding/guidance/how-use-grant-tracker": {
@@ -3199,50 +3212,50 @@
       "consecutiveFailures": 0
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2025/funding-for-eligible-erc-applications---application-by-invitation-only-/Download": {
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "Unsupported response content type",
-      "consecutiveFailures": 9
+      "consecutiveFailures": 10
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2024/funding-for-research-on-research-and-innovation-policy/Download": {
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "Unsupported response content type",
-      "consecutiveFailures": 9
+      "consecutiveFailures": 10
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2019/personal-overseas-research-grant-for-doctoral-and-post-doctoral-fellows/": {
-      "contentHash": "f111a3b49542e761fb636210aad66d779139bbf97d364e189c99b656f781e9f9",
-      "semanticHash": "1a91146f0a8e67295c5f49005a5b487faa90791959492f03594e8a42aac4a51f",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
+      "contentHash": "9c21b65f1de78bce4c5bce7824fd2ab65c9beaa0d6097a341a95cc8ee993ff82",
+      "semanticHash": "9ec6a2b64856f9bb30f7c635eb34487be767eea86b3f9d132b5e7830708d5fca",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
       "etag": "",
       "lastModified": "",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2023/research-infrastructure/Download": {
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "HTTP 404",
-      "consecutiveFailures": 9
+      "consecutiveFailures": 10
     },
     "https://www.forskningsradet.no/siteassets/utlysninger/vedlegg-utlysninger/infra_spreadsheet-for-costs-and-funding.xlsx": {
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "Unsupported response content type",
-      "consecutiveFailures": 9
+      "consecutiveFailures": 10
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2026/enhance-knowledge-results-ict-research-defence-sector/Download": {
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "Unsupported response content type",
-      "consecutiveFailures": 9
+      "consecutiveFailures": 10
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2026/top-up-financing-hfsp-postdoctoral-fellowships/Download": {
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "Unsupported response content type",
-      "consecutiveFailures": 9
+      "consecutiveFailures": 10
     },
     "https://www.forskningsradet.no/en/call-for-proposals/2025/supplementary-funding-ict-research-defence-sector/Download": {
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "lastError": "Unsupported response content type",
-      "consecutiveFailures": 9
+      "consecutiveFailures": 10
     },
     "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22arteriovenous+fistula%22+OR+TITLE_ABS%3A%22vascular+stenosis%22+OR+TITLE_ABS%3A%22hemodynamics%22+OR+TITLE_ABS%3A%22haemodynamics%22+OR+TITLE_ABS%3A%22cardiovascular+modelling%22+OR+TITLE_ABS%3A%22fluid+structure+interaction%22%29+AND+FIRST_PDATE%3A%5B2026-07-20+TO+2026-10-18%5D+sort_date%3Ay&format=json&resultType=core&pageSize=30": {
       "contentHash": "e7db19191f8fa6e94c263b7e919f61ad6fb4fa0def992a7c06b9e7df7e208125",
@@ -3428,14 +3441,14 @@
       "consecutiveFailures": 0
     },
     "https://euraxess.ec.europa.eu/jobs/473917": {
-      "contentHash": "cfd8ee0b0f98be33a58562afdaea8a0a455a4391fbd1a1e4eb012e0e7f254cc9",
+      "contentHash": "9335344d81321c42674b3e7d77ecd49aae85e09f43bdb9cfdd5e16658ff34dc4",
       "semanticHash": "c6c2fcd251cfb576955dad15e0eac80cf29c311e6ee1eeab2f6988b17d4c40ce",
-      "lastFetchedAt": "2026-11-18T06:14:25Z",
-      "etag": "W/\"1794982645-gzip\"",
-      "lastModified": "Wed, 18 Nov 2026 06:17:25 GMT",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795325571-gzip\"",
+      "lastModified": "Sun, 22 Nov 2026 05:32:51 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
       "consecutiveFailures": 0
     },
     "https://euraxess.ec.europa.eu/jobs/473913": {
@@ -3446,8 +3459,8 @@
       "lastModified": "Tue, 10 Nov 2026 05:08:05 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 2,
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 3,
       "lastError": "HTTP 429"
     },
     "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22arteriovenous+fistula%22+OR+TITLE_ABS%3A%22vascular+stenosis%22+OR+TITLE_ABS%3A%22hemodynamics%22+OR+TITLE_ABS%3A%22haemodynamics%22+OR+TITLE_ABS%3A%22cardiovascular+modelling%22+OR+TITLE_ABS%3A%22fluid+structure+interaction%22%29+AND+FIRST_PDATE%3A%5B2026-07-24+TO+2026-10-22%5D+sort_date%3Ay&format=json&resultType=core&pageSize=30": {
@@ -4023,8 +4036,8 @@
       "lastModified": "Tue, 10 Nov 2026 05:29:50 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 2,
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 3,
       "lastError": "HTTP 429"
     },
     "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22arteriovenous+fistula%22+OR+TITLE_ABS%3A%22vascular+stenosis%22+OR+TITLE_ABS%3A%22hemodynamics%22+OR+TITLE_ABS%3A%22haemodynamics%22+OR+TITLE_ABS%3A%22cardiovascular+modelling%22+OR+TITLE_ABS%3A%22fluid+structure+interaction%22%29+AND+FIRST_PDATE%3A%5B2026-08-05+TO+2026-11-03%5D+sort_date%3Ay&format=json&resultType=core&pageSize=30": {
@@ -4185,8 +4198,8 @@
       "lastModified": "Tue, 10 Nov 2026 05:31:33 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 2,
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 3,
       "lastError": "HTTP 429"
     },
     "https://euraxess.ec.europa.eu/jobs/477749": {
@@ -4197,8 +4210,8 @@
       "lastModified": "Tue, 10 Nov 2026 05:17:59 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 2,
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 3,
       "lastError": "HTTP 429"
     },
     "https://euraxess.ec.europa.eu/jobs/477747": {
@@ -4209,9 +4222,9 @@
       "lastModified": "Sat, 14 Nov 2026 05:04:01 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 1,
-      "lastError": "HTTP 429"
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 2,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22arteriovenous+fistula%22+OR+TITLE_ABS%3A%22vascular+stenosis%22+OR+TITLE_ABS%3A%22hemodynamics%22+OR+TITLE_ABS%3A%22haemodynamics%22+OR+TITLE_ABS%3A%22cardiovascular+modelling%22+OR+TITLE_ABS%3A%22fluid+structure+interaction%22%29+AND+FIRST_PDATE%3A%5B2026-08-09+TO+2026-11-07%5D+sort_date%3Ay&format=json&resultType=core&pageSize=30": {
       "contentHash": "7d4eb1403ce3c8f463816f33d44ea75849553a5fea863143dd69f9c4e99834ac",
@@ -4389,9 +4402,9 @@
       "lastModified": "Tue, 10 Nov 2026 05:00:09 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 2,
-      "lastError": "HTTP 429"
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 3,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://euraxess.ec.europa.eu/jobs/478779": {
       "contentHash": "b7d6d63ebd0664e543c80071c2738f6d2cb782e7e176efc79f342d05c1ef520f",
@@ -4401,9 +4414,9 @@
       "lastModified": "Tue, 10 Nov 2026 04:59:44 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 2,
-      "lastError": "HTTP 429"
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 3,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22arteriovenous+fistula%22+OR+TITLE_ABS%3A%22vascular+stenosis%22+OR+TITLE_ABS%3A%22hemodynamics%22+OR+TITLE_ABS%3A%22haemodynamics%22+OR+TITLE_ABS%3A%22cardiovascular+modelling%22+OR+TITLE_ABS%3A%22fluid+structure+interaction%22%29+AND+FIRST_PDATE%3A%5B2026-08-13+TO+2026-11-11%5D+sort_date%3Ay&format=json&resultType=core&pageSize=30": {
       "contentHash": "b107b512dba0a88ae42c16afdd82f0d1a8694bf6d7b05b9d6f0d33ad34aa14b0",
@@ -4595,8 +4608,9 @@
       "lastModified": "Wed, 18 Nov 2026 05:28:12 GMT",
       "parseStatus": "html",
       "parseErrors": [],
-      "lastAttemptAt": "2026-11-18T06:14:25Z",
-      "consecutiveFailures": 0
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 1,
+      "lastError": "Run time budget exceeded before source request"
     },
     "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22arteriovenous+fistula%22+OR+TITLE_ABS%3A%22vascular+stenosis%22+OR+TITLE_ABS%3A%22hemodynamics%22+OR+TITLE_ABS%3A%22haemodynamics%22+OR+TITLE_ABS%3A%22cardiovascular+modelling%22+OR+TITLE_ABS%3A%22fluid+structure+interaction%22%29+AND+FIRST_PDATE%3A%5B2026-08-17+TO+2026-11-15%5D+sort_date%3Ay&format=json&resultType=core&pageSize=30": {
       "contentHash": "64af6dd553c5c1cce73b89f521d8ead0c620de4041d1dd48e94ae551bbc69403",
@@ -4884,9 +4898,74 @@
       "parseErrors": [],
       "lastAttemptAt": "2026-11-21T05:54:29Z",
       "consecutiveFailures": 0
+    },
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22arteriovenous+fistula%22+OR+TITLE_ABS%3A%22vascular+stenosis%22+OR+TITLE_ABS%3A%22hemodynamics%22+OR+TITLE_ABS%3A%22haemodynamics%22+OR+TITLE_ABS%3A%22cardiovascular+modelling%22+OR+TITLE_ABS%3A%22fluid+structure+interaction%22%29+AND+FIRST_PDATE%3A%5B2026-08-24+TO+2026-11-22%5D+sort_date%3Ay&format=json&resultType=core&pageSize=30": {
+      "contentHash": "3c5ed406f5e0d1ac32e0766c394f5b42bf92aa201759d786a260d7a6794b34d1",
+      "semanticHash": "3c5ed406f5e0d1ac32e0766c394f5b42bf92aa201759d786a260d7a6794b34d1",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "",
+      "lastModified": "",
+      "parseStatus": "bibliographic-metadata",
+      "parseErrors": [],
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 0
+    },
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22biomedical+optics%22+OR+TITLE_ABS%3A%22biophotonics%22+OR+TITLE_ABS%3A%22photoplethysmography%22+OR+TITLE_ABS%3A%22diffuse+correlation+spectroscopy%22+OR+TITLE_ABS%3A%22near+infrared+spectroscopy%22+OR+TITLE_ABS%3A%22laser+speckle%22+OR+TITLE_ABS%3A%22wearable+sensors%22%29+AND+FIRST_PDATE%3A%5B2026-08-24+TO+2026-11-22%5D+sort_date%3Ay&format=json&resultType=core&pageSize=30": {
+      "contentHash": "c0d8d4fb1e5982ae2f2e22e07a6000e49eaf26762d02e96e1f4739d6997d77c1",
+      "semanticHash": "c0d8d4fb1e5982ae2f2e22e07a6000e49eaf26762d02e96e1f4739d6997d77c1",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "",
+      "lastModified": "",
+      "parseStatus": "bibliographic-metadata",
+      "parseErrors": [],
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 0
+    },
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22inverse+problems%22+OR+TITLE_ABS%3A%22physics+informed+machine+learning%22+OR+TITLE_ABS%3A%22scientific+machine+learning%22+OR+TITLE_ABS%3A%22domain+adaptation%22+OR+TITLE_ABS%3A%22sim+to+real%22+OR+TITLE_ABS%3A%22signal+denoising%22+OR+TITLE_ABS%3A%22edge+AI%22%29+AND+FIRST_PDATE%3A%5B2026-08-24+TO+2026-11-22%5D+sort_date%3Ay&format=json&resultType=core&pageSize=30": {
+      "contentHash": "aa2302b7a20892c642c2fc08cc94378092b826fe9d633d3dd65b09a6038eb99c",
+      "semanticHash": "aa2302b7a20892c642c2fc08cc94378092b826fe9d633d3dd65b09a6038eb99c",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "",
+      "lastModified": "",
+      "parseStatus": "bibliographic-metadata",
+      "parseErrors": [],
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 0
+    },
+    "https://euraxess.ec.europa.eu/jobs/482037": {
+      "contentHash": "596030591d91628d79003fc8024fc7891adf9558ccf7dce6cda5d39596d4b920",
+      "semanticHash": "bf465fe45be8319f298c5a464eb2a9236a1db1936b20b12d554309fdb5616371",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "W/\"1795325302-gzip\"",
+      "lastModified": "Sun, 22 Nov 2026 05:28:22 GMT",
+      "parseStatus": "html",
+      "parseErrors": [],
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 0
+    },
+    "https://euraxess.ec.europa.eu/jobs/482035": {
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "lastError": "HTTP 429",
+      "consecutiveFailures": 1
+    },
+    "https://euraxess.ec.europa.eu/jobs/482034": {
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "lastError": "HTTP 429",
+      "consecutiveFailures": 1
+    },
+    "https://www.forskningsradet.no/en/financing/received-funding-new-system/": {
+      "contentHash": "2eff6c37afa1f0ba2eff200bdf475e5f394c7d71a75285a95e54d137caaf89cd",
+      "semanticHash": "922cc8e4b617bed348d2e95cbf5599b7a3b1fd212fd59430bcd6238a72851b2c",
+      "lastFetchedAt": "2026-11-22T05:27:54Z",
+      "etag": "",
+      "lastModified": "",
+      "parseStatus": "html",
+      "parseErrors": [],
+      "lastAttemptAt": "2026-11-22T05:27:54Z",
+      "consecutiveFailures": 0
     }
   },
   "schemaVersion": 1,
-  "lastRunAt": "2026-11-21T05:57:12Z",
-  "revision": "44873024313-1"
+  "lastRunAt": "2026-11-22T05:33:02Z",
+  "revision": "44989508197-1"
 }
